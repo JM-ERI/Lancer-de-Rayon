@@ -1,0 +1,124 @@
+\hypertarget{_parser_8h}{}\section{include/\+Parser.h File Reference}
+\label{_parser_8h}\index{include/\+Parser.\+h@{include/\+Parser.\+h}}
+
+
+contains the parser of user command line and a scene parser  
+
+
+{\ttfamily \#include \char`\"{}Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cube.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sphere.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Triangle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Rectangle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cylindre.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Camera.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Lst\+\_\+\+Object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Scene.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Option.\+h\char`\"{}}\newline
+Include dependency graph for Parser.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_parser_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{_parser_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_parser_8h_a0b07aaf5d9b84d9c600364a1cb3a767d}{lray\+\_\+help} ()
+\begin{DoxyCompactList}\small\item\em help message of lray program \end{DoxyCompactList}\item 
+void \hyperlink{_parser_8h_ad23d60505728d0a0307d982a5f33f645}{lray\+\_\+usage} ()
+\begin{DoxyCompactList}\small\item\em usage message of lray program \end{DoxyCompactList}\item 
+int \hyperlink{_parser_8h_a011af2f67fb95e38b5839fe1fa6c452e}{parse\+\_\+args} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{struct_option}{Option} $\ast$options)
+\begin{DoxyCompactList}\small\item\em parse user arguments from the command line \end{DoxyCompactList}\item 
+int \hyperlink{_parser_8h_a7d3e8a4a1e3ca923e8adb94a6a5c662d}{parse\+\_\+\+X\+M\+L\+\_\+scene} (const char $\ast$input\+\_\+path, \hyperlink{struct_scene}{Scene} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em parse a X\+ML scene \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains the parser of user command line and a scene parser 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Manuel E\+R\+I\+A\+LC -\/ Hadjer D\+J\+E\+R\+R\+O\+U\+MI 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 juin 2020
+\end{DoxyDate}
+contains the parser of user command line and a scene parser 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_parser_8h_a0b07aaf5d9b84d9c600364a1cb3a767d}\label{_parser_8h_a0b07aaf5d9b84d9c600364a1cb3a767d}} 
+\index{Parser.\+h@{Parser.\+h}!lray\+\_\+help@{lray\+\_\+help}}
+\index{lray\+\_\+help@{lray\+\_\+help}!Parser.\+h@{Parser.\+h}}
+\subsubsection{\texorpdfstring{lray\+\_\+help()}{lray\_help()}}
+{\footnotesize\ttfamily void lray\+\_\+help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+help message of lray program 
+
+\mbox{\Hypertarget{_parser_8h_ad23d60505728d0a0307d982a5f33f645}\label{_parser_8h_ad23d60505728d0a0307d982a5f33f645}} 
+\index{Parser.\+h@{Parser.\+h}!lray\+\_\+usage@{lray\+\_\+usage}}
+\index{lray\+\_\+usage@{lray\+\_\+usage}!Parser.\+h@{Parser.\+h}}
+\subsubsection{\texorpdfstring{lray\+\_\+usage()}{lray\_usage()}}
+{\footnotesize\ttfamily void lray\+\_\+usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+usage message of lray program 
+
+\mbox{\Hypertarget{_parser_8h_a011af2f67fb95e38b5839fe1fa6c452e}\label{_parser_8h_a011af2f67fb95e38b5839fe1fa6c452e}} 
+\index{Parser.\+h@{Parser.\+h}!parse\+\_\+args@{parse\+\_\+args}}
+\index{parse\+\_\+args@{parse\+\_\+args}!Parser.\+h@{Parser.\+h}}
+\subsubsection{\texorpdfstring{parse\+\_\+args()}{parse\_args()}}
+{\footnotesize\ttfamily int parse\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{struct_option}{Option} $\ast$}]{options }\end{DoxyParamCaption})}
+
+
+
+parse user arguments from the command line 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of arguments \\
+\hline
+{\em argv} & all arguments \\
+\hline
+{\em options} & all options specified by user in a type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the parsing fails~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_parser_8h_a7d3e8a4a1e3ca923e8adb94a6a5c662d}\label{_parser_8h_a7d3e8a4a1e3ca923e8adb94a6a5c662d}} 
+\index{Parser.\+h@{Parser.\+h}!parse\+\_\+\+X\+M\+L\+\_\+scene@{parse\+\_\+\+X\+M\+L\+\_\+scene}}
+\index{parse\+\_\+\+X\+M\+L\+\_\+scene@{parse\+\_\+\+X\+M\+L\+\_\+scene}!Parser.\+h@{Parser.\+h}}
+\subsubsection{\texorpdfstring{parse\+\_\+\+X\+M\+L\+\_\+scene()}{parse\_XML\_scene()}}
+{\footnotesize\ttfamily int parse\+\_\+\+X\+M\+L\+\_\+scene (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input\+\_\+path,  }\item[{\hyperlink{struct_scene}{Scene} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+parse a X\+ML scene 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+path} & path of the scene file \\
+\hline
+{\em scene} & the scene to build \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a err occurs ( file not found or parsing error)~\newline
+ 1 successful parsing 
+\end{DoxyReturn}

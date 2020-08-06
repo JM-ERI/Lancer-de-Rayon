@@ -1,0 +1,283 @@
+\hypertarget{_image_8c}{}\section{src/\+Image.c File Reference}
+\label{_image_8c}\index{src/\+Image.\+c@{src/\+Image.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Png\+\_\+\+Output.\+h\char`\"{}}\newline
+Include dependency graph for Image.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_image_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_image_8c_a3896ee5a25180b5e04bf713f79ba0b98}{E\+N\+T\+E\+T\+E\+\_\+\+J\+P\+G\+\_\+\+S\+I\+ZE}~8
+\item 
+\#define \hyperlink{_image_8c_a9f23b0e8c374a7b29ab683b27ea22588}{W\+I\+D\+T\+H\+\_\+\+S\+I\+ZE}~4
+\item 
+\#define \hyperlink{_image_8c_ac027bac0b8a946eaedfb028b625c0553}{H\+E\+I\+G\+H\+T\+\_\+\+S\+I\+ZE}~4
+\item 
+\#define \hyperlink{_image_8c_a81a1e7c6ba3f4e57e7dc000b51bcfcb2}{B\+I\+T\+\_\+\+D\+E\+P\+TH}~8
+\item 
+\#define \hyperlink{_image_8c_a7a9c43127e97eee658845ac574818a9b}{P\+N\+G\+\_\+\+R\+GB}~2
+\item 
+\#define \hyperlink{_image_8c_a5edd51af5ea949d7f12eefdc7afc57aa}{C\+H\+U\+N\+K\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE}~4
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_image}{Image} $\ast$ \hyperlink{_image_8c_a826b2135c4d1433205ef086a8012a910}{new\+Image} (int w, int h)
+\begin{DoxyCompactList}\small\item\em create a image of size w x h \end{DoxyCompactList}\item 
+void \hyperlink{_image_8c_a404a3ccd4a05f939d24646a64ecd2539}{free\+Image} (\hyperlink{struct_image}{Image} $\ast$image)
+\begin{DoxyCompactList}\small\item\em free all the memory alocated by the image \end{DoxyCompactList}\item 
+\hyperlink{struct_image}{Image} $\ast$ \hyperlink{_image_8c_a49cbe22eca3070ae03919553dc6c5560}{clone\+Image} (\hyperlink{struct_image}{Image} $\ast$src)
+\begin{DoxyCompactList}\small\item\em clone a image (this function make memory allocation) \end{DoxyCompactList}\item 
+int \hyperlink{_image_8c_a029610b9f61710fba7717f81abc831eb}{cpy\+Image} (\hyperlink{struct_image}{Image} $\ast$dest, \hyperlink{struct_image}{Image} $\ast$src)
+\begin{DoxyCompactList}\small\item\em copy an image to another \end{DoxyCompactList}\item 
+int \hyperlink{_image_8c_a4f8a59fa9ff8f8bc8dc8345f79acc69e}{write\+Image\+P\+PM} (\hyperlink{struct_image}{Image} $\ast$I, const char $\ast$export\+\_\+file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em export image to P\+PM \end{DoxyCompactList}\item 
+int \hyperlink{_image_8c_aa26105e7379206b03980ebf579c67e18}{write\+Image\+P\+NG} (\hyperlink{struct_image}{Image} $\ast$I, const char $\ast$export\+\_\+file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em export image to P\+NG \end{DoxyCompactList}\item 
+int \hyperlink{_image_8c_abc536a624594d32cf629d15e727e1304}{Image\+Set\+Pixel} (\hyperlink{struct_image}{Image} $\ast$image, const \hyperlink{struct_color}{Color} $\ast$p, int row, int column)
+\begin{DoxyCompactList}\small\item\em sets the color of the given pixel \end{DoxyCompactList}\item 
+int \hyperlink{_image_8c_a7cdcf43538a56567ec37ed007ff6df3e}{Image\+Get\+Pixel} (const \hyperlink{struct_image}{Image} $\ast$img, \hyperlink{struct_color}{Color} $\ast$res, int row, int column)
+\begin{DoxyCompactList}\small\item\em gets the color of a given pixel \end{DoxyCompactList}\item 
+void \hyperlink{_image_8c_a12fca6dfb14c74382e06366ad01a47e7}{progressive\+Ray} (int render, \hyperlink{struct_image}{Image} $\ast$dest, \hyperlink{struct_image}{Image} $\ast$comming, \hyperlink{struct_image}{Image} $\ast$old)
+\begin{DoxyCompactList}\small\item\em make a progressive\+Ray on two image \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_image_8c_a81a1e7c6ba3f4e57e7dc000b51bcfcb2}\label{_image_8c_a81a1e7c6ba3f4e57e7dc000b51bcfcb2}} 
+\index{Image.\+c@{Image.\+c}!B\+I\+T\+\_\+\+D\+E\+P\+TH@{B\+I\+T\+\_\+\+D\+E\+P\+TH}}
+\index{B\+I\+T\+\_\+\+D\+E\+P\+TH@{B\+I\+T\+\_\+\+D\+E\+P\+TH}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{B\+I\+T\+\_\+\+D\+E\+P\+TH}{BIT\_DEPTH}}
+{\footnotesize\ttfamily \#define B\+I\+T\+\_\+\+D\+E\+P\+TH~8}
+
+\mbox{\Hypertarget{_image_8c_a5edd51af5ea949d7f12eefdc7afc57aa}\label{_image_8c_a5edd51af5ea949d7f12eefdc7afc57aa}} 
+\index{Image.\+c@{Image.\+c}!C\+H\+U\+N\+K\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE@{C\+H\+U\+N\+K\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE}}
+\index{C\+H\+U\+N\+K\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE@{C\+H\+U\+N\+K\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{C\+H\+U\+N\+K\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE}{CHUNK\_NAME\_SIZE}}
+{\footnotesize\ttfamily \#define C\+H\+U\+N\+K\+\_\+\+N\+A\+M\+E\+\_\+\+S\+I\+ZE~4}
+
+\mbox{\Hypertarget{_image_8c_a3896ee5a25180b5e04bf713f79ba0b98}\label{_image_8c_a3896ee5a25180b5e04bf713f79ba0b98}} 
+\index{Image.\+c@{Image.\+c}!E\+N\+T\+E\+T\+E\+\_\+\+J\+P\+G\+\_\+\+S\+I\+ZE@{E\+N\+T\+E\+T\+E\+\_\+\+J\+P\+G\+\_\+\+S\+I\+ZE}}
+\index{E\+N\+T\+E\+T\+E\+\_\+\+J\+P\+G\+\_\+\+S\+I\+ZE@{E\+N\+T\+E\+T\+E\+\_\+\+J\+P\+G\+\_\+\+S\+I\+ZE}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{E\+N\+T\+E\+T\+E\+\_\+\+J\+P\+G\+\_\+\+S\+I\+ZE}{ENTETE\_JPG\_SIZE}}
+{\footnotesize\ttfamily \#define E\+N\+T\+E\+T\+E\+\_\+\+J\+P\+G\+\_\+\+S\+I\+ZE~8}
+
+\mbox{\Hypertarget{_image_8c_ac027bac0b8a946eaedfb028b625c0553}\label{_image_8c_ac027bac0b8a946eaedfb028b625c0553}} 
+\index{Image.\+c@{Image.\+c}!H\+E\+I\+G\+H\+T\+\_\+\+S\+I\+ZE@{H\+E\+I\+G\+H\+T\+\_\+\+S\+I\+ZE}}
+\index{H\+E\+I\+G\+H\+T\+\_\+\+S\+I\+ZE@{H\+E\+I\+G\+H\+T\+\_\+\+S\+I\+ZE}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{H\+E\+I\+G\+H\+T\+\_\+\+S\+I\+ZE}{HEIGHT\_SIZE}}
+{\footnotesize\ttfamily \#define H\+E\+I\+G\+H\+T\+\_\+\+S\+I\+ZE~4}
+
+\mbox{\Hypertarget{_image_8c_a7a9c43127e97eee658845ac574818a9b}\label{_image_8c_a7a9c43127e97eee658845ac574818a9b}} 
+\index{Image.\+c@{Image.\+c}!P\+N\+G\+\_\+\+R\+GB@{P\+N\+G\+\_\+\+R\+GB}}
+\index{P\+N\+G\+\_\+\+R\+GB@{P\+N\+G\+\_\+\+R\+GB}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{P\+N\+G\+\_\+\+R\+GB}{PNG\_RGB}}
+{\footnotesize\ttfamily \#define P\+N\+G\+\_\+\+R\+GB~2}
+
+\mbox{\Hypertarget{_image_8c_a9f23b0e8c374a7b29ab683b27ea22588}\label{_image_8c_a9f23b0e8c374a7b29ab683b27ea22588}} 
+\index{Image.\+c@{Image.\+c}!W\+I\+D\+T\+H\+\_\+\+S\+I\+ZE@{W\+I\+D\+T\+H\+\_\+\+S\+I\+ZE}}
+\index{W\+I\+D\+T\+H\+\_\+\+S\+I\+ZE@{W\+I\+D\+T\+H\+\_\+\+S\+I\+ZE}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{W\+I\+D\+T\+H\+\_\+\+S\+I\+ZE}{WIDTH\_SIZE}}
+{\footnotesize\ttfamily \#define W\+I\+D\+T\+H\+\_\+\+S\+I\+ZE~4}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_image_8c_a49cbe22eca3070ae03919553dc6c5560}\label{_image_8c_a49cbe22eca3070ae03919553dc6c5560}} 
+\index{Image.\+c@{Image.\+c}!clone\+Image@{clone\+Image}}
+\index{clone\+Image@{clone\+Image}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{clone\+Image()}{cloneImage()}}
+{\footnotesize\ttfamily \hyperlink{struct_image}{Image}$\ast$ clone\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{struct_image}{Image} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+clone a image (this function make memory allocation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & the image to clone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the address of the cloned image~\newline
+ N\+U\+LL if a memory allocation occurs or src == N\+U\+LL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_image_8c_a029610b9f61710fba7717f81abc831eb}\label{_image_8c_a029610b9f61710fba7717f81abc831eb}} 
+\index{Image.\+c@{Image.\+c}!cpy\+Image@{cpy\+Image}}
+\index{cpy\+Image@{cpy\+Image}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{cpy\+Image()}{cpyImage()}}
+{\footnotesize\ttfamily int cpy\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{struct_image}{Image} $\ast$}]{dest,  }\item[{\hyperlink{struct_image}{Image} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+copy an image to another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & the destination image \\
+\hline
+{\em src} & the source image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the image was successfully copied~\newline
+ 0 if a error occurs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_image_8c_a404a3ccd4a05f939d24646a64ecd2539}\label{_image_8c_a404a3ccd4a05f939d24646a64ecd2539}} 
+\index{Image.\+c@{Image.\+c}!free\+Image@{free\+Image}}
+\index{free\+Image@{free\+Image}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{free\+Image()}{freeImage()}}
+{\footnotesize\ttfamily void free\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{struct_image}{Image} $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+free all the memory alocated by the image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the image to free \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_image_8c_a7cdcf43538a56567ec37ed007ff6df3e}\label{_image_8c_a7cdcf43538a56567ec37ed007ff6df3e}} 
+\index{Image.\+c@{Image.\+c}!Image\+Get\+Pixel@{Image\+Get\+Pixel}}
+\index{Image\+Get\+Pixel@{Image\+Get\+Pixel}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{Image\+Get\+Pixel()}{ImageGetPixel()}}
+{\footnotesize\ttfamily int Image\+Get\+Pixel (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_image}{Image} $\ast$}]{img,  }\item[{\hyperlink{struct_color}{Color} $\ast$}]{res,  }\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+gets the color of a given pixel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+{\em res} & the color of the pixel \\
+\hline
+{\em row} & the row of the pixel \\
+\hline
+{\em column} & the colomn of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_image_8c_abc536a624594d32cf629d15e727e1304}\label{_image_8c_abc536a624594d32cf629d15e727e1304}} 
+\index{Image.\+c@{Image.\+c}!Image\+Set\+Pixel@{Image\+Set\+Pixel}}
+\index{Image\+Set\+Pixel@{Image\+Set\+Pixel}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{Image\+Set\+Pixel()}{ImageSetPixel()}}
+{\footnotesize\ttfamily int Image\+Set\+Pixel (\begin{DoxyParamCaption}\item[{\hyperlink{struct_image}{Image} $\ast$}]{image,  }\item[{const \hyperlink{struct_color}{Color} $\ast$}]{p,  }\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+sets the color of the given pixel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the image to set \\
+\hline
+{\em p} & the new color of the pixel \\
+\hline
+{\em row} & the row of the pixel \\
+\hline
+{\em column} & the colomn of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_image_8c_a826b2135c4d1433205ef086a8012a910}\label{_image_8c_a826b2135c4d1433205ef086a8012a910}} 
+\index{Image.\+c@{Image.\+c}!new\+Image@{new\+Image}}
+\index{new\+Image@{new\+Image}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{new\+Image()}{newImage()}}
+{\footnotesize\ttfamily \hyperlink{struct_image}{Image}$\ast$ new\+Image (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+create a image of size w x h 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the width of the image to create \\
+\hline
+{\em h} & the height of the image to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the address of the created image~\newline
+ N\+U\+LL if a image occurs(w $<$= 0 $\vert$$\vert$ h $<$= 0 or memory allocation error) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_image_8c_a12fca6dfb14c74382e06366ad01a47e7}\label{_image_8c_a12fca6dfb14c74382e06366ad01a47e7}} 
+\index{Image.\+c@{Image.\+c}!progressive\+Ray@{progressive\+Ray}}
+\index{progressive\+Ray@{progressive\+Ray}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{progressive\+Ray()}{progressiveRay()}}
+{\footnotesize\ttfamily void progressive\+Ray (\begin{DoxyParamCaption}\item[{int}]{render,  }\item[{\hyperlink{struct_image}{Image} $\ast$}]{dest,  }\item[{\hyperlink{struct_image}{Image} $\ast$}]{comming,  }\item[{\hyperlink{struct_image}{Image} $\ast$}]{old }\end{DoxyParamCaption})}
+
+
+
+make a progressive\+Ray on two image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em render} & the render of the progressive\+Ray (between 1 and 9) \\
+\hline
+{\em dest} & the computed image \\
+\hline
+{\em comming} & the next image computed \\
+\hline
+{\em old} & the old image computed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_image_8c_aa26105e7379206b03980ebf579c67e18}\label{_image_8c_aa26105e7379206b03980ebf579c67e18}} 
+\index{Image.\+c@{Image.\+c}!write\+Image\+P\+NG@{write\+Image\+P\+NG}}
+\index{write\+Image\+P\+NG@{write\+Image\+P\+NG}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{write\+Image\+P\+N\+G()}{writeImagePNG()}}
+{\footnotesize\ttfamily int write\+Image\+P\+NG (\begin{DoxyParamCaption}\item[{\hyperlink{struct_image}{Image} $\ast$}]{I,  }\item[{const char $\ast$}]{export\+\_\+file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+export image to P\+NG 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I} & the image to export \\
+\hline
+{\em export\+\_\+file\+\_\+name} & the path where the image should be exported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the image was successfully exported~\newline
+ 0 if a error occurs (I == N\+U\+LL $\vert$$\vert$ export\+\_\+file\+\_\+name == N\+U\+LL or the open of export\+\_\+file\+\_\+name fails) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_image_8c_a4f8a59fa9ff8f8bc8dc8345f79acc69e}\label{_image_8c_a4f8a59fa9ff8f8bc8dc8345f79acc69e}} 
+\index{Image.\+c@{Image.\+c}!write\+Image\+P\+PM@{write\+Image\+P\+PM}}
+\index{write\+Image\+P\+PM@{write\+Image\+P\+PM}!Image.\+c@{Image.\+c}}
+\subsubsection{\texorpdfstring{write\+Image\+P\+P\+M()}{writeImagePPM()}}
+{\footnotesize\ttfamily int write\+Image\+P\+PM (\begin{DoxyParamCaption}\item[{\hyperlink{struct_image}{Image} $\ast$}]{I,  }\item[{const char $\ast$}]{export\+\_\+file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+export image to P\+PM 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I} & the image to export \\
+\hline
+{\em export\+\_\+file\+\_\+name} & the path where the image should be exported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the image was successfully exported~\newline
+ 0 if a error occurs (I == N\+U\+LL $\vert$$\vert$ export\+\_\+file\+\_\+name == N\+U\+LL or the open of export\+\_\+file\+\_\+name fails) 
+\end{DoxyReturn}

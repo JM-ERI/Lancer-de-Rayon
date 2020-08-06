@@ -1,0 +1,165 @@
+\hypertarget{_light_8h}{}\section{include/\+Light.h File Reference}
+\label{_light_8h}\index{include/\+Light.\+h@{include/\+Light.\+h}}
+{\ttfamily \#include \char`\"{}Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Vecteur.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Lst\+\_\+\+Object.\+h\char`\"{}}\newline
+Include dependency graph for Light.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_light_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_light_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_source}{Source}
+\begin{DoxyCompactList}\small\item\em a light source \end{DoxyCompactList}\item 
+struct \hyperlink{struct__lst__point}{\+\_\+lst\+\_\+point}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__lst__point}{\+\_\+lst\+\_\+point} \hyperlink{_light_8h_ad242681e1717b8f774a276b2615c342c}{node\+\_\+\+Source}
+\item 
+typedef struct \hyperlink{struct__lst__point}{\+\_\+lst\+\_\+point} $\ast$ \hyperlink{_light_8h_aa56740bdfdc3237971604e047e2894fc}{lst\+\_\+\+Source}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_light_8h_a0ba575f751b8450bb4e7dc2932022587}{set\+Source} (\hyperlink{struct_source}{Source} $\ast$src, const \hyperlink{struct_point}{Point} $\ast$p, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} intensity)
+\begin{DoxyCompactList}\small\item\em sets a source with the specified parameters \end{DoxyCompactList}\item 
+int \hyperlink{_light_8h_a0a9396997898e3cc6967fc19a8296d44}{add\+\_\+source} (\hyperlink{structlst___source}{lst\+\_\+\+Source} $\ast$lst, const \hyperlink{struct_source}{Source} $\ast$src)
+\begin{DoxyCompactList}\small\item\em add a source to the list \end{DoxyCompactList}\item 
+void \hyperlink{_light_8h_a256c1429a2986d4a7f3ab3d2bdc0ee43}{free\+\_\+lst\+\_\+\+Source} (\hyperlink{structlst___source}{lst\+\_\+\+Source} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em free all the memory alocated by a \hyperlink{structlst___source}{lst\+\_\+\+Source} \end{DoxyCompactList}\item 
+int \hyperlink{_light_8h_ade2c2259c09a6f7b78ecb2a81dc426c5}{delta} (const \hyperlink{struct_source}{Source} $\ast$src, const \hyperlink{struct_point}{Point} $\ast$point, const \hyperlink{structlst___object}{lst\+\_\+\+Object} lst)
+\begin{DoxyCompactList}\small\item\em check wether a point is illuminated by a source \end{DoxyCompactList}\item 
+int \hyperlink{_light_8h_a62664dbe826347dc3feca688509ee54f}{Source\+Console\+Display} (const \hyperlink{struct_source}{Source} $\ast$s)
+\begin{DoxyCompactList}\small\item\em print a source in the console \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_light_8h_aa56740bdfdc3237971604e047e2894fc}\label{_light_8h_aa56740bdfdc3237971604e047e2894fc}} 
+\index{Light.\+h@{Light.\+h}!lst\+\_\+\+Source@{lst\+\_\+\+Source}}
+\index{lst\+\_\+\+Source@{lst\+\_\+\+Source}!Light.\+h@{Light.\+h}}
+\subsubsection{\texorpdfstring{lst\+\_\+\+Source}{lst\_Source}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct__lst__point}{\+\_\+lst\+\_\+point} $\ast$ \hyperlink{structlst___source}{lst\+\_\+\+Source}}
+
+\mbox{\Hypertarget{_light_8h_ad242681e1717b8f774a276b2615c342c}\label{_light_8h_ad242681e1717b8f774a276b2615c342c}} 
+\index{Light.\+h@{Light.\+h}!node\+\_\+\+Source@{node\+\_\+\+Source}}
+\index{node\+\_\+\+Source@{node\+\_\+\+Source}!Light.\+h@{Light.\+h}}
+\subsubsection{\texorpdfstring{node\+\_\+\+Source}{node\_Source}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct__lst__point}{\+\_\+lst\+\_\+point} \hyperlink{_light_8h_ad242681e1717b8f774a276b2615c342c}{node\+\_\+\+Source}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_light_8h_a0a9396997898e3cc6967fc19a8296d44}\label{_light_8h_a0a9396997898e3cc6967fc19a8296d44}} 
+\index{Light.\+h@{Light.\+h}!add\+\_\+source@{add\+\_\+source}}
+\index{add\+\_\+source@{add\+\_\+source}!Light.\+h@{Light.\+h}}
+\subsubsection{\texorpdfstring{add\+\_\+source()}{add\_source()}}
+{\footnotesize\ttfamily int add\+\_\+source (\begin{DoxyParamCaption}\item[{\hyperlink{structlst___source}{lst\+\_\+\+Source} $\ast$}]{lst,  }\item[{const \hyperlink{struct_source}{Source} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+add a source to the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & the list \\
+\hline
+{\em src} & the the lignt source to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(lst == N\+U\+LL $\vert$$\vert$ src == N\+U\+LL or memory allocation error) 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_light_8h_ade2c2259c09a6f7b78ecb2a81dc426c5}\label{_light_8h_ade2c2259c09a6f7b78ecb2a81dc426c5}} 
+\index{Light.\+h@{Light.\+h}!delta@{delta}}
+\index{delta@{delta}!Light.\+h@{Light.\+h}}
+\subsubsection{\texorpdfstring{delta()}{delta()}}
+{\footnotesize\ttfamily int delta (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_source}{Source} $\ast$}]{src,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{point,  }\item[{const \hyperlink{structlst___object}{lst\+\_\+\+Object}}]{lst }\end{DoxyParamCaption})}
+
+
+
+check wether a point is illuminated by a source 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & a light source \\
+\hline
+{\em point} & a point \\
+\hline
+{\em lst} & the list of all objects of the scene \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if a error occurs(src == N\+U\+LL $\vert$$\vert$ point == N\+U\+LL $\vert$$\vert$ lst == N\+U\+LL)~\newline
+ 0 if the point is not illuminated~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_light_8h_a256c1429a2986d4a7f3ab3d2bdc0ee43}\label{_light_8h_a256c1429a2986d4a7f3ab3d2bdc0ee43}} 
+\index{Light.\+h@{Light.\+h}!free\+\_\+lst\+\_\+\+Source@{free\+\_\+lst\+\_\+\+Source}}
+\index{free\+\_\+lst\+\_\+\+Source@{free\+\_\+lst\+\_\+\+Source}!Light.\+h@{Light.\+h}}
+\subsubsection{\texorpdfstring{free\+\_\+lst\+\_\+\+Source()}{free\_lst\_Source()}}
+{\footnotesize\ttfamily void free\+\_\+lst\+\_\+\+Source (\begin{DoxyParamCaption}\item[{\hyperlink{structlst___source}{lst\+\_\+\+Source} $\ast$}]{lst }\end{DoxyParamCaption})}
+
+
+
+free all the memory alocated by a \hyperlink{structlst___source}{lst\+\_\+\+Source} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & the list to free \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_light_8h_a0ba575f751b8450bb4e7dc2932022587}\label{_light_8h_a0ba575f751b8450bb4e7dc2932022587}} 
+\index{Light.\+h@{Light.\+h}!set\+Source@{set\+Source}}
+\index{set\+Source@{set\+Source}!Light.\+h@{Light.\+h}}
+\subsubsection{\texorpdfstring{set\+Source()}{setSource()}}
+{\footnotesize\ttfamily int set\+Source (\begin{DoxyParamCaption}\item[{\hyperlink{struct_source}{Source} $\ast$}]{src,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{p,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{intensity }\end{DoxyParamCaption})}
+
+
+
+sets a source with the specified parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & the light source to set \\
+\hline
+{\em p} & the position of the source \\
+\hline
+{\em intensity} & the intensity of the source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_light_8h_a62664dbe826347dc3feca688509ee54f}\label{_light_8h_a62664dbe826347dc3feca688509ee54f}} 
+\index{Light.\+h@{Light.\+h}!Source\+Console\+Display@{Source\+Console\+Display}}
+\index{Source\+Console\+Display@{Source\+Console\+Display}!Light.\+h@{Light.\+h}}
+\subsubsection{\texorpdfstring{Source\+Console\+Display()}{SourceConsoleDisplay()}}
+{\footnotesize\ttfamily int Source\+Console\+Display (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_source}{Source} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+print a source in the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the light source to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(s == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}

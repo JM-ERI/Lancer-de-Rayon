@@ -1,0 +1,215 @@
+\hypertarget{_point_8h}{}\section{include/\+Point.h File Reference}
+\label{_point_8h}\index{include/\+Point.\+h@{include/\+Point.\+h}}
+
+
+contains the \hyperlink{struct_point}{Point} type in a 3D space and all functions related to this type  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_point_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_point}{Point}
+\begin{DoxyCompactList}\small\item\em a point in 3D space \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_point_8h_a23ba93e3ff33fc963b04a7a6b7d2a02e}{Point\+Copy} (\hyperlink{struct_point}{Point} $\ast$dest, const \hyperlink{struct_point}{Point} $\ast$src)
+\begin{DoxyCompactList}\small\item\em copy a point to another \end{DoxyCompactList}\item 
+int \hyperlink{_point_8h_ab29783f805e84cb225f1655f0193b958}{set\+Point} (\hyperlink{struct_point}{Point} $\ast$p, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} x, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} y, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} z)
+\begin{DoxyCompactList}\small\item\em sets the point with the specified values \end{DoxyCompactList}\item 
+int \hyperlink{_point_8h_a8912155316eb1b59ccbc9af652fa85f5}{Point\+Center} (\hyperlink{struct_point}{Point} $\ast$res, const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_point}{Point} $\ast$B)
+\begin{DoxyCompactList}\small\item\em computes the center of the segment \mbox{[}AB\mbox{]} \end{DoxyCompactList}\item 
+int \hyperlink{_point_8h_ae023f752cbf662f10bb4b9086e871aa3}{Point\+Distance} (const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_point}{Point} $\ast$B, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$res)
+\begin{DoxyCompactList}\small\item\em computes the distance between two points \end{DoxyCompactList}\item 
+int \hyperlink{_point_8h_ab6956f8b3de44009fe28b420c4df3dbe}{Point\+Norme\+L2} (const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_point}{Point} $\ast$B, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$res)
+\begin{DoxyCompactList}\small\item\em computes the maximum norm of two points \end{DoxyCompactList}\item 
+int \hyperlink{_point_8h_ac811169e97b55bc567f51e34d8c85e4f}{Point\+Barycentre} (const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_point}{Point} $\ast$B, const \hyperlink{struct_point}{Point} $\ast$C, \hyperlink{struct_point}{Point} $\ast$Bary\+Centre)
+\begin{DoxyCompactList}\small\item\em computes the barycenter of three points \end{DoxyCompactList}\item 
+int \hyperlink{_point_8h_a9aa4b8ef9609540b0a58f4b841b2da12}{Point\+Console\+Display} (const \hyperlink{struct_point}{Point} $\ast$p, int return\+\_\+line)
+\begin{DoxyCompactList}\small\item\em print a point in the console \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains the \hyperlink{struct_point}{Point} type in a 3D space and all functions related to this type 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Manuel E\+R\+I\+A\+LC -\/ Hadjer D\+J\+E\+R\+R\+O\+U\+MI 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 juin 2020
+\end{DoxyDate}
+contains the vector type in a 3D space and all functions related to this type 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_point_8h_ac811169e97b55bc567f51e34d8c85e4f}\label{_point_8h_ac811169e97b55bc567f51e34d8c85e4f}} 
+\index{Point.\+h@{Point.\+h}!Point\+Barycentre@{Point\+Barycentre}}
+\index{Point\+Barycentre@{Point\+Barycentre}!Point.\+h@{Point.\+h}}
+\subsubsection{\texorpdfstring{Point\+Barycentre()}{PointBarycentre()}}
+{\footnotesize\ttfamily int Point\+Barycentre (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_point}{Point} $\ast$}]{A,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{B,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{C,  }\item[{\hyperlink{struct_point}{Point} $\ast$}]{Bary\+Centre }\end{DoxyParamCaption})}
+
+
+
+computes the barycenter of three points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the first point \\
+\hline
+{\em B} & the second point \\
+\hline
+{\em C} & the third point \\
+\hline
+{\em Bary\+Centre} & the computed barycenter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_8h_a8912155316eb1b59ccbc9af652fa85f5}\label{_point_8h_a8912155316eb1b59ccbc9af652fa85f5}} 
+\index{Point.\+h@{Point.\+h}!Point\+Center@{Point\+Center}}
+\index{Point\+Center@{Point\+Center}!Point.\+h@{Point.\+h}}
+\subsubsection{\texorpdfstring{Point\+Center()}{PointCenter()}}
+{\footnotesize\ttfamily int Point\+Center (\begin{DoxyParamCaption}\item[{\hyperlink{struct_point}{Point} $\ast$}]{res,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{A,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{B }\end{DoxyParamCaption})}
+
+
+
+computes the center of the segment \mbox{[}AB\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em res} & the result \\
+\hline
+{\em A} & the first point \\
+\hline
+{\em B} & the second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_8h_a9aa4b8ef9609540b0a58f4b841b2da12}\label{_point_8h_a9aa4b8ef9609540b0a58f4b841b2da12}} 
+\index{Point.\+h@{Point.\+h}!Point\+Console\+Display@{Point\+Console\+Display}}
+\index{Point\+Console\+Display@{Point\+Console\+Display}!Point.\+h@{Point.\+h}}
+\subsubsection{\texorpdfstring{Point\+Console\+Display()}{PointConsoleDisplay()}}
+{\footnotesize\ttfamily int Point\+Console\+Display (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_point}{Point} $\ast$}]{p,  }\item[{int}]{return\+\_\+line }\end{DoxyParamCaption})}
+
+
+
+print a point in the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the point to print \\
+\hline
+{\em return\+\_\+line} & != 0 if we want to add a \textquotesingle{}~\newline
+\textquotesingle{} after the print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(p == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_8h_a23ba93e3ff33fc963b04a7a6b7d2a02e}\label{_point_8h_a23ba93e3ff33fc963b04a7a6b7d2a02e}} 
+\index{Point.\+h@{Point.\+h}!Point\+Copy@{Point\+Copy}}
+\index{Point\+Copy@{Point\+Copy}!Point.\+h@{Point.\+h}}
+\subsubsection{\texorpdfstring{Point\+Copy()}{PointCopy()}}
+{\footnotesize\ttfamily int Point\+Copy (\begin{DoxyParamCaption}\item[{\hyperlink{struct_point}{Point} $\ast$}]{dest,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+copy a point to another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & the destination point \\
+\hline
+{\em src} & the point to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(dest == N\+U\+LL $\vert$$\vert$ A == src)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_8h_ae023f752cbf662f10bb4b9086e871aa3}\label{_point_8h_ae023f752cbf662f10bb4b9086e871aa3}} 
+\index{Point.\+h@{Point.\+h}!Point\+Distance@{Point\+Distance}}
+\index{Point\+Distance@{Point\+Distance}!Point.\+h@{Point.\+h}}
+\subsubsection{\texorpdfstring{Point\+Distance()}{PointDistance()}}
+{\footnotesize\ttfamily int Point\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_point}{Point} $\ast$}]{A,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{B,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+computes the distance between two points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the first point \\
+\hline
+{\em B} & the second point \\
+\hline
+{\em res} & the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_8h_ab6956f8b3de44009fe28b420c4df3dbe}\label{_point_8h_ab6956f8b3de44009fe28b420c4df3dbe}} 
+\index{Point.\+h@{Point.\+h}!Point\+Norme\+L2@{Point\+Norme\+L2}}
+\index{Point\+Norme\+L2@{Point\+Norme\+L2}!Point.\+h@{Point.\+h}}
+\subsubsection{\texorpdfstring{Point\+Norme\+L2()}{PointNormeL2()}}
+{\footnotesize\ttfamily int Point\+Norme\+L2 (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_point}{Point} $\ast$}]{A,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{B,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+computes the maximum norm of two points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the first point \\
+\hline
+{\em B} & the second point \\
+\hline
+{\em res} & the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_8h_ab29783f805e84cb225f1655f0193b958}\label{_point_8h_ab29783f805e84cb225f1655f0193b958}} 
+\index{Point.\+h@{Point.\+h}!set\+Point@{set\+Point}}
+\index{set\+Point@{set\+Point}!Point.\+h@{Point.\+h}}
+\subsubsection{\texorpdfstring{set\+Point()}{setPoint()}}
+{\footnotesize\ttfamily int set\+Point (\begin{DoxyParamCaption}\item[{\hyperlink{struct_point}{Point} $\ast$}]{p,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{x,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{y,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{z }\end{DoxyParamCaption})}
+
+
+
+sets the point with the specified values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the point to change \\
+\hline
+{\em x} & the x coordinate \\
+\hline
+{\em y} & the y coordinate \\
+\hline
+{\em z} & the z coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(p == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}

@@ -1,0 +1,289 @@
+\hypertarget{_object_8c}{}\section{src/\+Object.c File Reference}
+\label{_object_8c}\index{src/\+Object.\+c@{src/\+Object.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Hmat.\+h\char`\"{}}\newline
+Include dependency graph for Object.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_object_8c_a1a22ac87616cdbe196512ef1b73ae5f0}{translate} (\hyperlink{struct_object}{Object} $\ast$obj, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v)
+\begin{DoxyCompactList}\small\item\em translates an object with the vector v \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_a350a211d1f76f1a76c4dc3cfd4f34c33}{rescale} (\hyperlink{struct_object}{Object} $\ast$obj, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} a, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} b, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} c)
+\begin{DoxyCompactList}\small\item\em recale an object with specified parameters \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_af4348e62b05f2570bb442cfb121c0341}{rotate\+\_\+x} (\hyperlink{struct_object}{Object} $\ast$obj, const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v)
+\begin{DoxyCompactList}\small\item\em rotate an object with angle (u, v) around the ox axis \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_ac0c36f5f4faa52bf80eea7b747eed60b}{rotate\+\_\+y} (\hyperlink{struct_object}{Object} $\ast$obj, const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v)
+\begin{DoxyCompactList}\small\item\em rotate an object with angle (u, v) around the oy axis \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_a83a6004b2e5803e7696326c1ecc3d5ce}{rotate\+\_\+z} (\hyperlink{struct_object}{Object} $\ast$obj, const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v)
+\begin{DoxyCompactList}\small\item\em rotate an object with angle (u, v) around the oz axis \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_a241c87f1a0ab2e6d1dcea47f7c7dfe89}{Object\+From\+Cube} (\hyperlink{struct_object}{Object} $\ast$object, const \hyperlink{struct_cube}{Cube} $\ast$cube)
+\begin{DoxyCompactList}\small\item\em create an \hyperlink{struct_object}{Object} from a given \hyperlink{struct_cube}{Cube} \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_aa0b25ac5933cbb73775aee217c94bff7}{Object\+From\+Cylindre} (\hyperlink{struct_object}{Object} $\ast$object, const \hyperlink{struct_cylindre}{Cylindre} $\ast$cylindre)
+\begin{DoxyCompactList}\small\item\em create an \hyperlink{struct_object}{Object} from a given Cylinder \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_ad28d6620bda753a3908abf2704c538db}{Object\+From\+Sphere} (\hyperlink{struct_object}{Object} $\ast$object, const \hyperlink{struct_sphere}{Sphere} $\ast$sphere)
+\begin{DoxyCompactList}\small\item\em create an \hyperlink{struct_object}{Object} from a given \hyperlink{struct_sphere}{Sphere} \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_a9bbc408cde820bda9e040e07948171b2}{Object\+From\+Rectangle} (\hyperlink{struct_object}{Object} $\ast$object, const \hyperlink{struct_rectangle}{Rectangle} $\ast$rectangle)
+\begin{DoxyCompactList}\small\item\em create an \hyperlink{struct_object}{Object} from a given \hyperlink{struct_rectangle}{Rectangle} \end{DoxyCompactList}\item 
+int \hyperlink{_object_8c_a0c9fdcf1b9f04f4c44a879e191673c2c}{Object\+From\+Triangle} (\hyperlink{struct_object}{Object} $\ast$object, const \hyperlink{struct_triangle}{Triangle} $\ast$triangle)
+\begin{DoxyCompactList}\small\item\em create an \hyperlink{struct_object}{Object} from a given \hyperlink{struct_triangle}{Triangle} \end{DoxyCompactList}\item 
+void \hyperlink{_object_8c_af40b8e36625f2ede9a38ab2f7d74d6f0}{Object\+Copy} (\hyperlink{struct_object}{Object} $\ast$dest, const \hyperlink{struct_object}{Object} $\ast$src)
+\item 
+\hyperlink{_object_8h_af3ec464aa442c2d0bd0c227fda28a8be}{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT} \hyperlink{_object_8c_ab32f8d726dda9fdb876eec5aefd57f42}{string\+\_\+to\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT} (char $\ast$object\+\_\+name)
+\begin{DoxyCompactList}\small\item\em transforms the name of a object e.\+g \hyperlink{struct_sphere}{Sphere} to his T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT enum \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_object_8c_af40b8e36625f2ede9a38ab2f7d74d6f0}\label{_object_8c_af40b8e36625f2ede9a38ab2f7d74d6f0}} 
+\index{Object.\+c@{Object.\+c}!Object\+Copy@{Object\+Copy}}
+\index{Object\+Copy@{Object\+Copy}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{Object\+Copy()}{ObjectCopy()}}
+{\footnotesize\ttfamily void Object\+Copy (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{dest,  }\item[{const \hyperlink{struct_object}{Object} $\ast$}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_object_8c_a241c87f1a0ab2e6d1dcea47f7c7dfe89}\label{_object_8c_a241c87f1a0ab2e6d1dcea47f7c7dfe89}} 
+\index{Object.\+c@{Object.\+c}!Object\+From\+Cube@{Object\+From\+Cube}}
+\index{Object\+From\+Cube@{Object\+From\+Cube}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{Object\+From\+Cube()}{ObjectFromCube()}}
+{\footnotesize\ttfamily int Object\+From\+Cube (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{object,  }\item[{const \hyperlink{struct_cube}{Cube} $\ast$}]{cube }\end{DoxyParamCaption})}
+
+
+
+create an \hyperlink{struct_object}{Object} from a given \hyperlink{struct_cube}{Cube} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to create \\
+\hline
+{\em cube} & the given cube \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_aa0b25ac5933cbb73775aee217c94bff7}\label{_object_8c_aa0b25ac5933cbb73775aee217c94bff7}} 
+\index{Object.\+c@{Object.\+c}!Object\+From\+Cylindre@{Object\+From\+Cylindre}}
+\index{Object\+From\+Cylindre@{Object\+From\+Cylindre}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{Object\+From\+Cylindre()}{ObjectFromCylindre()}}
+{\footnotesize\ttfamily int Object\+From\+Cylindre (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{object,  }\item[{const \hyperlink{struct_cylindre}{Cylindre} $\ast$}]{cylindre }\end{DoxyParamCaption})}
+
+
+
+create an \hyperlink{struct_object}{Object} from a given Cylinder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to create \\
+\hline
+{\em cylindre} & the given cylinder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_a9bbc408cde820bda9e040e07948171b2}\label{_object_8c_a9bbc408cde820bda9e040e07948171b2}} 
+\index{Object.\+c@{Object.\+c}!Object\+From\+Rectangle@{Object\+From\+Rectangle}}
+\index{Object\+From\+Rectangle@{Object\+From\+Rectangle}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{Object\+From\+Rectangle()}{ObjectFromRectangle()}}
+{\footnotesize\ttfamily int Object\+From\+Rectangle (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{object,  }\item[{const \hyperlink{struct_rectangle}{Rectangle} $\ast$}]{rectangle }\end{DoxyParamCaption})}
+
+
+
+create an \hyperlink{struct_object}{Object} from a given \hyperlink{struct_rectangle}{Rectangle} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to create \\
+\hline
+{\em rectangle} & the given rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_ad28d6620bda753a3908abf2704c538db}\label{_object_8c_ad28d6620bda753a3908abf2704c538db}} 
+\index{Object.\+c@{Object.\+c}!Object\+From\+Sphere@{Object\+From\+Sphere}}
+\index{Object\+From\+Sphere@{Object\+From\+Sphere}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{Object\+From\+Sphere()}{ObjectFromSphere()}}
+{\footnotesize\ttfamily int Object\+From\+Sphere (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{object,  }\item[{const \hyperlink{struct_sphere}{Sphere} $\ast$}]{sphere }\end{DoxyParamCaption})}
+
+
+
+create an \hyperlink{struct_object}{Object} from a given \hyperlink{struct_sphere}{Sphere} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to create \\
+\hline
+{\em sphere} & the given sphere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_a0c9fdcf1b9f04f4c44a879e191673c2c}\label{_object_8c_a0c9fdcf1b9f04f4c44a879e191673c2c}} 
+\index{Object.\+c@{Object.\+c}!Object\+From\+Triangle@{Object\+From\+Triangle}}
+\index{Object\+From\+Triangle@{Object\+From\+Triangle}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{Object\+From\+Triangle()}{ObjectFromTriangle()}}
+{\footnotesize\ttfamily int Object\+From\+Triangle (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{object,  }\item[{const \hyperlink{struct_triangle}{Triangle} $\ast$}]{triangle }\end{DoxyParamCaption})}
+
+
+
+create an \hyperlink{struct_object}{Object} from a given \hyperlink{struct_triangle}{Triangle} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to create \\
+\hline
+{\em triangle} & the given triangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_a350a211d1f76f1a76c4dc3cfd4f34c33}\label{_object_8c_a350a211d1f76f1a76c4dc3cfd4f34c33}} 
+\index{Object.\+c@{Object.\+c}!rescale@{rescale}}
+\index{rescale@{rescale}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{rescale()}{rescale()}}
+{\footnotesize\ttfamily int rescale (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{obj,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{a,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{b,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{c }\end{DoxyParamCaption})}
+
+
+
+recale an object with specified parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the object to translate \\
+\hline
+{\em a} & the ox parameter \\
+\hline
+{\em b} & the oy parameter \\
+\hline
+{\em c} & the oz parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(obj == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_af4348e62b05f2570bb442cfb121c0341}\label{_object_8c_af4348e62b05f2570bb442cfb121c0341}} 
+\index{Object.\+c@{Object.\+c}!rotate\+\_\+x@{rotate\+\_\+x}}
+\index{rotate\+\_\+x@{rotate\+\_\+x}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{rotate\+\_\+x()}{rotate\_x()}}
+{\footnotesize\ttfamily int rotate\+\_\+x (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{obj,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+rotate an object with angle (u, v) around the ox axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the object to rotate \\
+\hline
+{\em u} & the first vector of the angle \\
+\hline
+{\em v} & the second vector of the angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_ac0c36f5f4faa52bf80eea7b747eed60b}\label{_object_8c_ac0c36f5f4faa52bf80eea7b747eed60b}} 
+\index{Object.\+c@{Object.\+c}!rotate\+\_\+y@{rotate\+\_\+y}}
+\index{rotate\+\_\+y@{rotate\+\_\+y}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{rotate\+\_\+y()}{rotate\_y()}}
+{\footnotesize\ttfamily int rotate\+\_\+y (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{obj,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+rotate an object with angle (u, v) around the oy axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the object to rotate \\
+\hline
+{\em u} & the first vector of the angle \\
+\hline
+{\em v} & the second vector of the angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_a83a6004b2e5803e7696326c1ecc3d5ce}\label{_object_8c_a83a6004b2e5803e7696326c1ecc3d5ce}} 
+\index{Object.\+c@{Object.\+c}!rotate\+\_\+z@{rotate\+\_\+z}}
+\index{rotate\+\_\+z@{rotate\+\_\+z}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{rotate\+\_\+z()}{rotate\_z()}}
+{\footnotesize\ttfamily int rotate\+\_\+z (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{obj,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+rotate an object with angle (u, v) around the oz axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the object to rotate \\
+\hline
+{\em u} & the first vector of the angle \\
+\hline
+{\em v} & the second vector of the angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_ab32f8d726dda9fdb876eec5aefd57f42}\label{_object_8c_ab32f8d726dda9fdb876eec5aefd57f42}} 
+\index{Object.\+c@{Object.\+c}!string\+\_\+to\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT@{string\+\_\+to\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT}}
+\index{string\+\_\+to\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT@{string\+\_\+to\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{string\+\_\+to\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T()}{string\_to\_TYPE\_OBJECT()}}
+{\footnotesize\ttfamily \hyperlink{_object_8h_af3ec464aa442c2d0bd0c227fda28a8be}{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT} string\+\_\+to\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT (\begin{DoxyParamCaption}\item[{char $\ast$}]{object\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+transforms the name of a object e.\+g \hyperlink{struct_sphere}{Sphere} to his T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT enum 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+\_\+name} & the object name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT representing the object~\newline
+ U\+N\+K\+N\+OW if an error occurs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_object_8c_a1a22ac87616cdbe196512ef1b73ae5f0}\label{_object_8c_a1a22ac87616cdbe196512ef1b73ae5f0}} 
+\index{Object.\+c@{Object.\+c}!translate@{translate}}
+\index{translate@{translate}!Object.\+c@{Object.\+c}}
+\subsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily int translate (\begin{DoxyParamCaption}\item[{\hyperlink{struct_object}{Object} $\ast$}]{obj,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+translates an object with the vector v 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the object to translate \\
+\hline
+{\em v} & the translation vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}

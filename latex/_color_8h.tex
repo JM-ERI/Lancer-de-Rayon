@@ -1,0 +1,194 @@
+\hypertarget{_color_8h}{}\section{include/\+Color.h File Reference}
+\label{_color_8h}\index{include/\+Color.\+h@{include/\+Color.\+h}}
+
+
+contains R\+GB color type and all functions related to it  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for Color.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{_color_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_color_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_color}{Color}
+\begin{DoxyCompactList}\small\item\em represents R\+GB color \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_color_8h_aaf343903dcffdb853cb543fb348d72e9}{moyennage\+Color} (int n, const \hyperlink{struct_color}{Color} $\ast$color\+\_\+comming, const \hyperlink{struct_color}{Color} $\ast$color\+\_\+old, \hyperlink{struct_color}{Color} $\ast$res)
+\begin{DoxyCompactList}\small\item\em computes a weighted average of two colors \end{DoxyCompactList}\item 
+int \hyperlink{_color_8h_af51f46d8c89a637cac181d0234f259fc}{set\+Color} (\hyperlink{struct_color}{Color} $\ast$color, unsigned char r, unsigned char g, unsigned char b)
+\begin{DoxyCompactList}\small\item\em sets a color with the specified valuers \end{DoxyCompactList}\item 
+int \hyperlink{_color_8h_a54aa1f118af6d46b8ac4902c6f3e2f00}{Color\+Copy} (\hyperlink{struct_color}{Color} $\ast$dest, const \hyperlink{struct_color}{Color} $\ast$src)
+\begin{DoxyCompactList}\small\item\em copy a color to another \end{DoxyCompactList}\item 
+int \hyperlink{_color_8h_a1f3d5e2bfbaded7521bcd91445516966}{Color\+\_\+to\+\_\+uint32\+\_\+t} (const \hyperlink{struct_color}{Color} $\ast$color, uint32\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em transform a color to a uint32\+\_\+t value \end{DoxyCompactList}\item 
+int \hyperlink{_color_8h_ad44ed96667ce5cc67ae816b097c824de}{Color\+\_\+from\+\_\+double} (\hyperlink{struct_color}{Color} $\ast$color, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} r, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} g, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} b)
+\begin{DoxyCompactList}\small\item\em computes R\+GB color from real values \end{DoxyCompactList}\item 
+int \hyperlink{_color_8h_ae4fbafaa79776d616aeaf0b8c11e019d}{Color\+Console\+Display} (const \hyperlink{struct_color}{Color} $\ast$c, int return\+\_\+line)
+\begin{DoxyCompactList}\small\item\em print a color and all his fiels in console \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains R\+GB color type and all functions related to it 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Manuel E\+R\+I\+A\+LC -\/ Hadjer D\+J\+E\+R\+R\+O\+U\+MI 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 juin 2020
+\end{DoxyDate}
+contains R\+GB color type and all functions related to it 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_color_8h_ad44ed96667ce5cc67ae816b097c824de}\label{_color_8h_ad44ed96667ce5cc67ae816b097c824de}} 
+\index{Color.\+h@{Color.\+h}!Color\+\_\+from\+\_\+double@{Color\+\_\+from\+\_\+double}}
+\index{Color\+\_\+from\+\_\+double@{Color\+\_\+from\+\_\+double}!Color.\+h@{Color.\+h}}
+\subsubsection{\texorpdfstring{Color\+\_\+from\+\_\+double()}{Color\_from\_double()}}
+{\footnotesize\ttfamily int Color\+\_\+from\+\_\+double (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color}{Color} $\ast$}]{color,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{r,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{g,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{b }\end{DoxyParamCaption})}
+
+
+
+computes R\+GB color from real values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the result color \\
+\hline
+{\em r} & the red value \\
+\hline
+{\em g} & the green value \\
+\hline
+{\em b} & the blue value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(color == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_color_8h_a1f3d5e2bfbaded7521bcd91445516966}\label{_color_8h_a1f3d5e2bfbaded7521bcd91445516966}} 
+\index{Color.\+h@{Color.\+h}!Color\+\_\+to\+\_\+uint32\+\_\+t@{Color\+\_\+to\+\_\+uint32\+\_\+t}}
+\index{Color\+\_\+to\+\_\+uint32\+\_\+t@{Color\+\_\+to\+\_\+uint32\+\_\+t}!Color.\+h@{Color.\+h}}
+\subsubsection{\texorpdfstring{Color\+\_\+to\+\_\+uint32\+\_\+t()}{Color\_to\_uint32\_t()}}
+{\footnotesize\ttfamily int Color\+\_\+to\+\_\+uint32\+\_\+t (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_color}{Color} $\ast$}]{color,  }\item[{uint32\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+transform a color to a uint32\+\_\+t value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color to transform \\
+\hline
+{\em value} & the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(dest == N\+U\+LL $\vert$$\vert$ src == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_color_8h_ae4fbafaa79776d616aeaf0b8c11e019d}\label{_color_8h_ae4fbafaa79776d616aeaf0b8c11e019d}} 
+\index{Color.\+h@{Color.\+h}!Color\+Console\+Display@{Color\+Console\+Display}}
+\index{Color\+Console\+Display@{Color\+Console\+Display}!Color.\+h@{Color.\+h}}
+\subsubsection{\texorpdfstring{Color\+Console\+Display()}{ColorConsoleDisplay()}}
+{\footnotesize\ttfamily int Color\+Console\+Display (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_color}{Color} $\ast$}]{c,  }\item[{int}]{return\+\_\+line }\end{DoxyParamCaption})}
+
+
+
+print a color and all his fiels in console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the color to print \\
+\hline
+{\em return\+\_\+line} & if we want to add a \textquotesingle{}~\newline
+\textquotesingle{} after the print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_color_8h_a54aa1f118af6d46b8ac4902c6f3e2f00}\label{_color_8h_a54aa1f118af6d46b8ac4902c6f3e2f00}} 
+\index{Color.\+h@{Color.\+h}!Color\+Copy@{Color\+Copy}}
+\index{Color\+Copy@{Color\+Copy}!Color.\+h@{Color.\+h}}
+\subsubsection{\texorpdfstring{Color\+Copy()}{ColorCopy()}}
+{\footnotesize\ttfamily int Color\+Copy (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color}{Color} $\ast$}]{dest,  }\item[{const \hyperlink{struct_color}{Color} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+copy a color to another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & the color to change \\
+\hline
+{\em src} & the copy to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(dest == N\+U\+LL $\vert$$\vert$ src == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_color_8h_aaf343903dcffdb853cb543fb348d72e9}\label{_color_8h_aaf343903dcffdb853cb543fb348d72e9}} 
+\index{Color.\+h@{Color.\+h}!moyennage\+Color@{moyennage\+Color}}
+\index{moyennage\+Color@{moyennage\+Color}!Color.\+h@{Color.\+h}}
+\subsubsection{\texorpdfstring{moyennage\+Color()}{moyennageColor()}}
+{\footnotesize\ttfamily int moyennage\+Color (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{const \hyperlink{struct_color}{Color} $\ast$}]{color\+\_\+comming,  }\item[{const \hyperlink{struct_color}{Color} $\ast$}]{color\+\_\+old,  }\item[{\hyperlink{struct_color}{Color} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+computes a weighted average of two colors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the render \\
+\hline
+{\em color\+\_\+comming} & the first color \\
+\hline
+{\em color\+\_\+old} & the second color \\
+\hline
+{\em res} & the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_color_8h_af51f46d8c89a637cac181d0234f259fc}\label{_color_8h_af51f46d8c89a637cac181d0234f259fc}} 
+\index{Color.\+h@{Color.\+h}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Color.\+h@{Color.\+h}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily int set\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color}{Color} $\ast$}]{color,  }\item[{unsigned char}]{r,  }\item[{unsigned char}]{g,  }\item[{unsigned char}]{b }\end{DoxyParamCaption})}
+
+
+
+sets a color with the specified valuers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color to set \\
+\hline
+{\em r} & the red value \\
+\hline
+{\em g} & the green value \\
+\hline
+{\em b} & the blue value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(color == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}

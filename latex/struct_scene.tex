@@ -1,0 +1,108 @@
+\hypertarget{struct_scene}{}\section{Scene Struct Reference}
+\label{struct_scene}\index{Scene@{Scene}}
+
+
+the 3D scene seen by the camera  
+
+
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Collaboration diagram for Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_scene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_scene_acf4d33ee4cff36f69b924471174dcb11}{level}
+\item 
+int \hyperlink{struct_scene_ab42fe399d3a5afbb011869e914bdb51e}{reflection\+\_\+level}
+\item 
+int \hyperlink{struct_scene_a55a22286c25bb0d604e9425da1c0c121}{timer\+\_\+on\+\_\+compute\+\_\+scene}
+\item 
+int \hyperlink{struct_scene_ad7146066ca84f44322c4b8b9b0cf68b3}{pixel\+\_\+sampling}
+\item 
+int \hyperlink{struct_scene_a413744f68ce61704d543f5a8920f0d49}{count\+\_\+rayon}
+\item 
+\hyperlink{structlst___source}{lst\+\_\+\+Source} \hyperlink{struct_scene_af2cbe3867b855ed9935538ebfffe3a6f}{sources}
+\item 
+\hyperlink{struct_camera}{Camera} \hyperlink{struct_scene_a2008f4ab70b5e4104c2ca43932536ddf}{camera}
+\item 
+\hyperlink{structlst___object}{lst\+\_\+\+Object} \hyperlink{struct_scene_ad1a9dde1f53b5136da8ba5fd10417eb5}{lst\+\_\+object}
+\item 
+\hyperlink{struct_image}{Image} $\ast$ \hyperlink{struct_scene_a00c31761980e6dadd21455e3f21926da}{output\+\_\+image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the 3D scene seen by the camera 
+
+\hyperlink{struct_scene}{Scene} is a type representing a scene and all his components (shapes, lights, camera...) 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_scene_a2008f4ab70b5e4104c2ca43932536ddf}\label{struct_scene_a2008f4ab70b5e4104c2ca43932536ddf}} 
+\index{Scene@{Scene}!camera@{camera}}
+\index{camera@{camera}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \hyperlink{struct_camera}{Camera} camera}
+
+the camera observing the scene \mbox{\Hypertarget{struct_scene_a413744f68ce61704d543f5a8920f0d49}\label{struct_scene_a413744f68ce61704d543f5a8920f0d49}} 
+\index{Scene@{Scene}!count\+\_\+rayon@{count\+\_\+rayon}}
+\index{count\+\_\+rayon@{count\+\_\+rayon}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{count\+\_\+rayon}{count\_rayon}}
+{\footnotesize\ttfamily int count\+\_\+rayon}
+
+index (between 0 and 8) of the current ray launched in the given pixel (level 2) \mbox{\Hypertarget{struct_scene_acf4d33ee4cff36f69b924471174dcb11}\label{struct_scene_acf4d33ee4cff36f69b924471174dcb11}} 
+\index{Scene@{Scene}!level@{level}}
+\index{level@{level}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int level}
+
+the level can be 1, 2 or 3 \mbox{\Hypertarget{struct_scene_ad1a9dde1f53b5136da8ba5fd10417eb5}\label{struct_scene_ad1a9dde1f53b5136da8ba5fd10417eb5}} 
+\index{Scene@{Scene}!lst\+\_\+object@{lst\+\_\+object}}
+\index{lst\+\_\+object@{lst\+\_\+object}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{lst\+\_\+object}{lst\_object}}
+{\footnotesize\ttfamily \hyperlink{structlst___object}{lst\+\_\+\+Object} lst\+\_\+object}
+
+list of all objects \mbox{\Hypertarget{struct_scene_a00c31761980e6dadd21455e3f21926da}\label{struct_scene_a00c31761980e6dadd21455e3f21926da}} 
+\index{Scene@{Scene}!output\+\_\+image@{output\+\_\+image}}
+\index{output\+\_\+image@{output\+\_\+image}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{output\+\_\+image}{output\_image}}
+{\footnotesize\ttfamily \hyperlink{struct_image}{Image}$\ast$ output\+\_\+image}
+
+the computed image \mbox{\Hypertarget{struct_scene_ad7146066ca84f44322c4b8b9b0cf68b3}\label{struct_scene_ad7146066ca84f44322c4b8b9b0cf68b3}} 
+\index{Scene@{Scene}!pixel\+\_\+sampling@{pixel\+\_\+sampling}}
+\index{pixel\+\_\+sampling@{pixel\+\_\+sampling}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{pixel\+\_\+sampling}{pixel\_sampling}}
+{\footnotesize\ttfamily int pixel\+\_\+sampling}
+
+number of rays per pixel (level 3) \mbox{\Hypertarget{struct_scene_ab42fe399d3a5afbb011869e914bdb51e}\label{struct_scene_ab42fe399d3a5afbb011869e914bdb51e}} 
+\index{Scene@{Scene}!reflection\+\_\+level@{reflection\+\_\+level}}
+\index{reflection\+\_\+level@{reflection\+\_\+level}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{reflection\+\_\+level}{reflection\_level}}
+{\footnotesize\ttfamily int reflection\+\_\+level}
+
+the level of reflection of objects \mbox{\Hypertarget{struct_scene_af2cbe3867b855ed9935538ebfffe3a6f}\label{struct_scene_af2cbe3867b855ed9935538ebfffe3a6f}} 
+\index{Scene@{Scene}!sources@{sources}}
+\index{sources@{sources}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{sources}{sources}}
+{\footnotesize\ttfamily \hyperlink{structlst___source}{lst\+\_\+\+Source} sources}
+
+list of all light sources \mbox{\Hypertarget{struct_scene_a55a22286c25bb0d604e9425da1c0c121}\label{struct_scene_a55a22286c25bb0d604e9425da1c0c121}} 
+\index{Scene@{Scene}!timer\+\_\+on\+\_\+compute\+\_\+scene@{timer\+\_\+on\+\_\+compute\+\_\+scene}}
+\index{timer\+\_\+on\+\_\+compute\+\_\+scene@{timer\+\_\+on\+\_\+compute\+\_\+scene}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{timer\+\_\+on\+\_\+compute\+\_\+scene}{timer\_on\_compute\_scene}}
+{\footnotesize\ttfamily int timer\+\_\+on\+\_\+compute\+\_\+scene}
+
+if we have to time the scene calculation 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_scene_8h}{Scene.\+h}\end{DoxyCompactItemize}

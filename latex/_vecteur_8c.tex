@@ -1,0 +1,385 @@
+\hypertarget{_vecteur_8c}{}\section{src/\+Vecteur.c File Reference}
+\label{_vecteur_8c}\index{src/\+Vecteur.\+c@{src/\+Vecteur.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Vecteur.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Hmat.\+h\char`\"{}}\newline
+Include dependency graph for Vecteur.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_vecteur_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_vecteur_8c_ab5f0ea47eec7035820dc636bc61bf80f}{Vecteur\+Copy} (\hyperlink{struct_vecteur}{Vecteur} $\ast$dest, const \hyperlink{struct_vecteur}{Vecteur} $\ast$src)
+\begin{DoxyCompactList}\small\item\em copy a vector to another \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_adf999ed64bdebe4b762a638fbe49cc65}{set\+Vecteur} (\hyperlink{struct_vecteur}{Vecteur} $\ast$u, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} x, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} y, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} z)
+\begin{DoxyCompactList}\small\item\em sets the vector with the specified values \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a091c0a1eb8d2f71463d20916f870ae11}{Vecteur\+Normalize} (\hyperlink{struct_vecteur}{Vecteur} $\ast$u)
+\begin{DoxyCompactList}\small\item\em normalizes a vector \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_af72d3969977142380c84e05b0361c66a}{Vecteur\+Square\+Norme} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$res)
+\begin{DoxyCompactList}\small\item\em get the square of the norm of a vector \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a8bb7fb8516b57380aac7736579cd9682}{Vecteur\+Prod\+\_\+scal} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$res)
+\begin{DoxyCompactList}\small\item\em computes the dot product of two vectors \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a01197256fb34963d4b9fc485f3a4052e}{Vecteur\+Prod\+\_\+vec} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v, \hyperlink{struct_vecteur}{Vecteur} $\ast$new\+Vecteur)
+\begin{DoxyCompactList}\small\item\em computes the vector product of two vectors \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_ab9bb35c984b458d5f9d6cd7050dece93}{Sinus} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$res)
+\begin{DoxyCompactList}\small\item\em compute the sine of an angle(u, v) \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_acd17e01734456773119bf807b243a3d3}{Cosinus} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$res)
+\begin{DoxyCompactList}\small\item\em compute the cosine of an angle(u, v) \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a4db9ffb37e52a22f9a901d0ba616192c}{Vecteur\+Of\+Points} (\hyperlink{struct_vecteur}{Vecteur} $\ast$vecteur, const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_point}{Point} $\ast$B)
+\begin{DoxyCompactList}\small\item\em compute the vector passing through points A and B \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a86862e27cb0ba6c33f438a51cf8a0db1}{Vecteur\+Equals} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v)
+\begin{DoxyCompactList}\small\item\em tells if a vector is equal to another \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a7f02ea0460266fbf202c014c3140fa67}{Vecteur\+Is\+Zero} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u)
+\begin{DoxyCompactList}\small\item\em check if the norme of a vector is zero \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a9ff68ff8eedb91cfa80a040b9d7718a0}{Vecteur\+Angles\+Equals} (\hyperlink{struct_vecteur}{Vecteur} $\ast$u1, \hyperlink{struct_vecteur}{Vecteur} $\ast$u2, \hyperlink{struct_vecteur}{Vecteur} $\ast$v1, \hyperlink{struct_vecteur}{Vecteur} $\ast$v2)
+\begin{DoxyCompactList}\small\item\em check if tow angles are equals \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a91b8b94ba3cfdf7676f02bb8bc3c8969}{Vecteur\+Half} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v, \hyperlink{struct_vecteur}{Vecteur} $\ast$res)
+\begin{DoxyCompactList}\small\item\em calculates the half vector of two vectors \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a3729c85facb0a4adf098a6286786d2a6}{Vecteur\+Reflected} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$N, \hyperlink{struct_vecteur}{Vecteur} $\ast$res)
+\begin{DoxyCompactList}\small\item\em sets the vector with the specified values \end{DoxyCompactList}\item 
+int \hyperlink{_vecteur_8c_a07297e041358d184cf258e2f2289a35b}{Vecteur\+Console\+Display} (const \hyperlink{struct_vecteur}{Vecteur} $\ast$vecteur, int return\+\_\+line)
+\begin{DoxyCompactList}\small\item\em print a vector in the console \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_vecteur_8c_acd17e01734456773119bf807b243a3d3}\label{_vecteur_8c_acd17e01734456773119bf807b243a3d3}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Cosinus@{Cosinus}}
+\index{Cosinus@{Cosinus}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Cosinus()}{Cosinus()}}
+{\footnotesize\ttfamily int Cosinus (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+compute the cosine of an angle(u, v) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the first vector \\
+\hline
+{\em v} & the second vector \\
+\hline
+{\em res} & the computed result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if an error occurs~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_adf999ed64bdebe4b762a638fbe49cc65}\label{_vecteur_8c_adf999ed64bdebe4b762a638fbe49cc65}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!set\+Vecteur@{set\+Vecteur}}
+\index{set\+Vecteur@{set\+Vecteur}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{set\+Vecteur()}{setVecteur()}}
+{\footnotesize\ttfamily int set\+Vecteur (\begin{DoxyParamCaption}\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{x,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{y,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{z }\end{DoxyParamCaption})}
+
+
+
+sets the vector with the specified values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the vector to change \\
+\hline
+{\em x} & the x coordinate \\
+\hline
+{\em y} & the y coordinate \\
+\hline
+{\em z} & the z coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_ab9bb35c984b458d5f9d6cd7050dece93}\label{_vecteur_8c_ab9bb35c984b458d5f9d6cd7050dece93}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Sinus@{Sinus}}
+\index{Sinus@{Sinus}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Sinus()}{Sinus()}}
+{\footnotesize\ttfamily int Sinus (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+compute the sine of an angle(u, v) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the first vector \\
+\hline
+{\em v} & the second vector \\
+\hline
+{\em res} & the computed result\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if an error occurs~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a9ff68ff8eedb91cfa80a040b9d7718a0}\label{_vecteur_8c_a9ff68ff8eedb91cfa80a040b9d7718a0}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Angles\+Equals@{Vecteur\+Angles\+Equals}}
+\index{Vecteur\+Angles\+Equals@{Vecteur\+Angles\+Equals}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Angles\+Equals()}{VecteurAnglesEquals()}}
+{\footnotesize\ttfamily int Vecteur\+Angles\+Equals (\begin{DoxyParamCaption}\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u1,  }\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u2,  }\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v1,  }\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v2 }\end{DoxyParamCaption})}
+
+
+
+check if tow angles are equals 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u1} & the first vector of the first angle \\
+\hline
+{\em u2} & the second vector of the first angle \\
+\hline
+{\em v1} & the first vector of the second angle \\
+\hline
+{\em v2} & the second vector of the second angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a07297e041358d184cf258e2f2289a35b}\label{_vecteur_8c_a07297e041358d184cf258e2f2289a35b}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Console\+Display@{Vecteur\+Console\+Display}}
+\index{Vecteur\+Console\+Display@{Vecteur\+Console\+Display}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Console\+Display()}{VecteurConsoleDisplay()}}
+{\footnotesize\ttfamily int Vecteur\+Console\+Display (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{vecteur,  }\item[{int}]{return\+\_\+line }\end{DoxyParamCaption})}
+
+
+
+print a vector in the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vecteur} & the vector to print \\
+\hline
+{\em return\+\_\+line} & != 0 if we want to add a \textquotesingle{}~\newline
+\textquotesingle{} after the print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_ab5f0ea47eec7035820dc636bc61bf80f}\label{_vecteur_8c_ab5f0ea47eec7035820dc636bc61bf80f}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Copy@{Vecteur\+Copy}}
+\index{Vecteur\+Copy@{Vecteur\+Copy}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Copy()}{VecteurCopy()}}
+{\footnotesize\ttfamily int Vecteur\+Copy (\begin{DoxyParamCaption}\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{dest,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+copy a vector to another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & the vector receiving this vector \\
+\hline
+{\em src} & the vector to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(dest == N\+U\+LL $\vert$$\vert$ A == src)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a86862e27cb0ba6c33f438a51cf8a0db1}\label{_vecteur_8c_a86862e27cb0ba6c33f438a51cf8a0db1}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Equals@{Vecteur\+Equals}}
+\index{Vecteur\+Equals@{Vecteur\+Equals}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Equals()}{VecteurEquals()}}
+{\footnotesize\ttfamily int Vecteur\+Equals (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+tells if a vector is equal to another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the first vector \\
+\hline
+{\em v} & the second vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if one of the vector is N\+U\+LL~\newline
+ 0 if the two vectors was not equals~\newline
+ 1 if the two vectors was equals 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a91b8b94ba3cfdf7676f02bb8bc3c8969}\label{_vecteur_8c_a91b8b94ba3cfdf7676f02bb8bc3c8969}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Half@{Vecteur\+Half}}
+\index{Vecteur\+Half@{Vecteur\+Half}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Half()}{VecteurHalf()}}
+{\footnotesize\ttfamily int Vecteur\+Half (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v,  }\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+calculates the half vector of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the first vector \\
+\hline
+{\em v} & the second vector \\
+\hline
+{\em res} & the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL $\vert$$\vert$ v == N\+U\+LL $\vert$$\vert$ res == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a7f02ea0460266fbf202c014c3140fa67}\label{_vecteur_8c_a7f02ea0460266fbf202c014c3140fa67}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Is\+Zero@{Vecteur\+Is\+Zero}}
+\index{Vecteur\+Is\+Zero@{Vecteur\+Is\+Zero}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Is\+Zero()}{VecteurIsZero()}}
+{\footnotesize\ttfamily int Vecteur\+Is\+Zero (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u }\end{DoxyParamCaption})}
+
+
+
+check if the norme of a vector is zero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & a vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a091c0a1eb8d2f71463d20916f870ae11}\label{_vecteur_8c_a091c0a1eb8d2f71463d20916f870ae11}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Normalize@{Vecteur\+Normalize}}
+\index{Vecteur\+Normalize@{Vecteur\+Normalize}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Normalize()}{VecteurNormalize()}}
+{\footnotesize\ttfamily int Vecteur\+Normalize (\begin{DoxyParamCaption}\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u }\end{DoxyParamCaption})}
+
+
+
+normalizes a vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the vector to normalize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a4db9ffb37e52a22f9a901d0ba616192c}\label{_vecteur_8c_a4db9ffb37e52a22f9a901d0ba616192c}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Of\+Points@{Vecteur\+Of\+Points}}
+\index{Vecteur\+Of\+Points@{Vecteur\+Of\+Points}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Of\+Points()}{VecteurOfPoints()}}
+{\footnotesize\ttfamily int Vecteur\+Of\+Points (\begin{DoxyParamCaption}\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{vecteur,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{A,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{B }\end{DoxyParamCaption})}
+
+
+
+compute the vector passing through points A and B 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vecteur} & the computed vector \\
+\hline
+{\em A} & \hyperlink{struct_point}{Point} A the point A \\
+\hline
+{\em B} & \hyperlink{struct_point}{Point} B the point B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(vecteur == N\+U\+LL $\vert$$\vert$ A == N\+U\+LL $\vert$$\vert$ B == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a8bb7fb8516b57380aac7736579cd9682}\label{_vecteur_8c_a8bb7fb8516b57380aac7736579cd9682}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Prod\+\_\+scal@{Vecteur\+Prod\+\_\+scal}}
+\index{Vecteur\+Prod\+\_\+scal@{Vecteur\+Prod\+\_\+scal}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Prod\+\_\+scal()}{VecteurProd\_scal()}}
+{\footnotesize\ttfamily int Vecteur\+Prod\+\_\+scal (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+computes the dot product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the first vector \\
+\hline
+{\em v} & the second vector \\
+\hline
+{\em res} & the computed value (the dot product of u v) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL $\vert$$\vert$ v == N\+U\+LL $\vert$$\vert$ res == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a01197256fb34963d4b9fc485f3a4052e}\label{_vecteur_8c_a01197256fb34963d4b9fc485f3a4052e}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Prod\+\_\+vec@{Vecteur\+Prod\+\_\+vec}}
+\index{Vecteur\+Prod\+\_\+vec@{Vecteur\+Prod\+\_\+vec}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Prod\+\_\+vec()}{VecteurProd\_vec()}}
+{\footnotesize\ttfamily int Vecteur\+Prod\+\_\+vec (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v,  }\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{new\+Vecteur }\end{DoxyParamCaption})}
+
+
+
+computes the vector product of two vectors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the first vector \\
+\hline
+{\em v} & the second vector \\
+\hline
+{\em new\+Vecteur} & the computed vector (the vector product of u v) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL $\vert$$\vert$ v == N\+U\+LL $\vert$$\vert$ new\+Vecteur == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_a3729c85facb0a4adf098a6286786d2a6}\label{_vecteur_8c_a3729c85facb0a4adf098a6286786d2a6}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Reflected@{Vecteur\+Reflected}}
+\index{Vecteur\+Reflected@{Vecteur\+Reflected}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Reflected()}{VecteurReflected()}}
+{\footnotesize\ttfamily int Vecteur\+Reflected (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{N,  }\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+sets the vector with the specified values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the incident vector \\
+\hline
+{\em N} & the normal vector \\
+\hline
+{\em res} & the normalized reflected vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL $\vert$$\vert$ N == N\+U\+LL $\vert$$\vert$ res == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vecteur_8c_af72d3969977142380c84e05b0361c66a}\label{_vecteur_8c_af72d3969977142380c84e05b0361c66a}} 
+\index{Vecteur.\+c@{Vecteur.\+c}!Vecteur\+Square\+Norme@{Vecteur\+Square\+Norme}}
+\index{Vecteur\+Square\+Norme@{Vecteur\+Square\+Norme}!Vecteur.\+c@{Vecteur.\+c}}
+\subsubsection{\texorpdfstring{Vecteur\+Square\+Norme()}{VecteurSquareNorme()}}
+{\footnotesize\ttfamily int Vecteur\+Square\+Norme (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} $\ast$}]{res }\end{DoxyParamCaption})}
+
+
+
+get the square of the norm of a vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the vector to change \\
+\hline
+{\em res} & the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(u == N\+U\+LL $\vert$$\vert$ res == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}

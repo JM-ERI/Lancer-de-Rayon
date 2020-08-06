@@ -1,0 +1,58 @@
+\hypertarget{_lst___object_8c}{}\section{src/\+Lst\+\_\+\+Object.c File Reference}
+\label{_lst___object_8c}\index{src/\+Lst\+\_\+\+Object.\+c@{src/\+Lst\+\_\+\+Object.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Lst\+\_\+\+Object.\+h\char`\"{}}\newline
+Include dependency graph for Lst\+\_\+\+Object.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lst___object_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_lst___object_8c_adf4f1899f0db47e4d39dc2f29743b80a}{lst\+\_\+\+Object\+\_\+add\+\_\+object} (\hyperlink{structlst___object}{lst\+\_\+\+Object} $\ast$lst, const \hyperlink{struct_object}{Object} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em add an object to the list \end{DoxyCompactList}\item 
+void \hyperlink{_lst___object_8c_a1dd31100c0c57211501497d3707823a7}{lst\+\_\+\+Object\+\_\+free} (\hyperlink{structlst___object}{lst\+\_\+\+Object} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em free all the memory alocated by a \hyperlink{structlst___object}{lst\+\_\+\+Object} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_lst___object_8c_adf4f1899f0db47e4d39dc2f29743b80a}\label{_lst___object_8c_adf4f1899f0db47e4d39dc2f29743b80a}} 
+\index{Lst\+\_\+\+Object.\+c@{Lst\+\_\+\+Object.\+c}!lst\+\_\+\+Object\+\_\+add\+\_\+object@{lst\+\_\+\+Object\+\_\+add\+\_\+object}}
+\index{lst\+\_\+\+Object\+\_\+add\+\_\+object@{lst\+\_\+\+Object\+\_\+add\+\_\+object}!Lst\+\_\+\+Object.\+c@{Lst\+\_\+\+Object.\+c}}
+\subsubsection{\texorpdfstring{lst\+\_\+\+Object\+\_\+add\+\_\+object()}{lst\_Object\_add\_object()}}
+{\footnotesize\ttfamily int lst\+\_\+\+Object\+\_\+add\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{structlst___object}{lst\+\_\+\+Object} $\ast$}]{lst,  }\item[{const \hyperlink{struct_object}{Object} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+add an object to the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & the list \\
+\hline
+{\em obj} & the object to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(lst == N\+U\+LL $\vert$$\vert$ obj == N\+U\+LL or memory allocation error) 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_lst___object_8c_a1dd31100c0c57211501497d3707823a7}\label{_lst___object_8c_a1dd31100c0c57211501497d3707823a7}} 
+\index{Lst\+\_\+\+Object.\+c@{Lst\+\_\+\+Object.\+c}!lst\+\_\+\+Object\+\_\+free@{lst\+\_\+\+Object\+\_\+free}}
+\index{lst\+\_\+\+Object\+\_\+free@{lst\+\_\+\+Object\+\_\+free}!Lst\+\_\+\+Object.\+c@{Lst\+\_\+\+Object.\+c}}
+\subsubsection{\texorpdfstring{lst\+\_\+\+Object\+\_\+free()}{lst\_Object\_free()}}
+{\footnotesize\ttfamily void lst\+\_\+\+Object\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{structlst___object}{lst\+\_\+\+Object} $\ast$}]{lst }\end{DoxyParamCaption})}
+
+
+
+free all the memory alocated by a \hyperlink{structlst___object}{lst\+\_\+\+Object} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & the list to free \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,157 @@
+\hypertarget{_rectangle_8h}{}\section{include/\+Rectangle.h File Reference}
+\label{_rectangle_8h}\index{include/\+Rectangle.\+h@{include/\+Rectangle.\+h}}
+
+
+represents the Light type  
+
+
+{\ttfamily \#include \char`\"{}Color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Vecteur.\+h\char`\"{}}\newline
+Include dependency graph for Rectangle.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{_rectangle_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_rectangle_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_rectangle}{Rectangle}
+\begin{DoxyCompactList}\small\item\em a rectangle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_rectangle_8h_a9aff16097d4e9df9801c98fa8638dfb2}{set\+Rectangle} (\hyperlink{struct_rectangle}{Rectangle} $\ast$rectangle, const \hyperlink{struct_point}{Point} $\ast$center, const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, const \hyperlink{struct_vecteur}{Vecteur} $\ast$v, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} rayon, const \hyperlink{struct_color}{Color} $\ast$color)
+\begin{DoxyCompactList}\small\item\em sets a rectangle with the specified parameters \end{DoxyCompactList}\item 
+int \hyperlink{_rectangle_8h_aa9c2d50faa142feb4c3cc03a8c5ee1e2}{rayon\+\_\+inter\+\_\+\+Square} (const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, \hyperlink{struct_point}{Point} $\ast$I, \hyperlink{struct_vecteur}{Vecteur} $\ast$N)
+\begin{DoxyCompactList}\small\item\em check the intersection between a line (A, u) and the canonical square \end{DoxyCompactList}\item 
+int \hyperlink{_rectangle_8h_a023ebad00750bac8b434afdcb5b48387}{Rectangle\+Console\+Display} (const \hyperlink{struct_rectangle}{Rectangle} $\ast$rectangle, int return\+\_\+line)
+\begin{DoxyCompactList}\small\item\em print a rectangle in the console \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+represents the Light type 
+
+represents a rectangle
+
+represents an object (shape)
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Manuel E\+R\+I\+A\+LC -\/ Hadjer D\+J\+E\+R\+R\+O\+U\+MI 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 juin 2020
+\end{DoxyDate}
+represents the Light type in 3D space and contains functions related it
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Manuel E\+R\+I\+A\+LC -\/ Hadjer D\+J\+E\+R\+R\+O\+U\+MI 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 juin 2020
+\end{DoxyDate}
+contains the type representing an object (shape) in a 3D space and functions related to it
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Manuel E\+R\+I\+A\+LC -\/ Hadjer D\+J\+E\+R\+R\+O\+U\+MI 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 juin 2020
+\end{DoxyDate}
+contains the type representing a rectangle in a 3D space and functions related to it 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_rectangle_8h_aa9c2d50faa142feb4c3cc03a8c5ee1e2}\label{_rectangle_8h_aa9c2d50faa142feb4c3cc03a8c5ee1e2}} 
+\index{Rectangle.\+h@{Rectangle.\+h}!rayon\+\_\+inter\+\_\+\+Square@{rayon\+\_\+inter\+\_\+\+Square}}
+\index{rayon\+\_\+inter\+\_\+\+Square@{rayon\+\_\+inter\+\_\+\+Square}!Rectangle.\+h@{Rectangle.\+h}}
+\subsubsection{\texorpdfstring{rayon\+\_\+inter\+\_\+\+Square()}{rayon\_inter\_Square()}}
+{\footnotesize\ttfamily int rayon\+\_\+inter\+\_\+\+Square (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_point}{Point} $\ast$}]{A,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{\hyperlink{struct_point}{Point} $\ast$}]{I,  }\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{N }\end{DoxyParamCaption})}
+
+
+
+check the intersection between a line (A, u) and the canonical square 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & a point of the line \\
+\hline
+{\em u} & the normalized director vector of the line \\
+\hline
+{\em I} & the intersection point if it exists \\
+\hline
+{\em N} & the normal vector in I \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_rectangle_8h_a023ebad00750bac8b434afdcb5b48387}\label{_rectangle_8h_a023ebad00750bac8b434afdcb5b48387}} 
+\index{Rectangle.\+h@{Rectangle.\+h}!Rectangle\+Console\+Display@{Rectangle\+Console\+Display}}
+\index{Rectangle\+Console\+Display@{Rectangle\+Console\+Display}!Rectangle.\+h@{Rectangle.\+h}}
+\subsubsection{\texorpdfstring{Rectangle\+Console\+Display()}{RectangleConsoleDisplay()}}
+{\footnotesize\ttfamily int Rectangle\+Console\+Display (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_rectangle}{Rectangle} $\ast$}]{rectangle,  }\item[{int}]{return\+\_\+line }\end{DoxyParamCaption})}
+
+
+
+print a rectangle in the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & the rectangle to print \\
+\hline
+{\em return\+\_\+line} & != 0 if we want to add a \textquotesingle{}~\newline
+\textquotesingle{} after the print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(rectangle == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_rectangle_8h_a9aff16097d4e9df9801c98fa8638dfb2}\label{_rectangle_8h_a9aff16097d4e9df9801c98fa8638dfb2}} 
+\index{Rectangle.\+h@{Rectangle.\+h}!set\+Rectangle@{set\+Rectangle}}
+\index{set\+Rectangle@{set\+Rectangle}!Rectangle.\+h@{Rectangle.\+h}}
+\subsubsection{\texorpdfstring{set\+Rectangle()}{setRectangle()}}
+{\footnotesize\ttfamily int set\+Rectangle (\begin{DoxyParamCaption}\item[{\hyperlink{struct_rectangle}{Rectangle} $\ast$}]{rectangle,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{center,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{v,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{rayon,  }\item[{const \hyperlink{struct_color}{Color} $\ast$}]{color }\end{DoxyParamCaption})}
+
+
+
+sets a rectangle with the specified parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & the rectangle to set \\
+\hline
+{\em center} & the center point \\
+\hline
+{\em u} & the first vector of the angle \\
+\hline
+{\em v} & the second vector of the angle \\
+\hline
+{\em rayon} & the radius \\
+\hline
+{\em color} & the color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}

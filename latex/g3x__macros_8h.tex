@@ -1,0 +1,382 @@
+\hypertarget{g3x__macros_8h}{}\section{libg3x/include/g3x\+\_\+macros.h File Reference}
+\label{g3x__macros_8h}\index{libg3x/include/g3x\+\_\+macros.\+h@{libg3x/include/g3x\+\_\+macros.\+h}}
+{\ttfamily \#include $<$g3x\+\_\+types.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for g3x\+\_\+macros.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{g3x__macros_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{g3x__macros_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{g3x__macros_8h_a369266c24eacffb87046522897a570d5}{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+\item 
+\#define \hyperlink{g3x__macros_8h_a57b946b5f8e455b24ad9afba402778dd}{G3\+X\+\_\+\+M\+A\+C\+R\+OS}
+\item 
+\#define \hyperlink{g3x__macros_8h_a1e0891b03fcbb36775d928aad1f9b56c}{\+\_\+2\+D\+\_\+}~2
+\item 
+\#define \hyperlink{g3x__macros_8h_ae3b8dbaa45162d7a8dd8b41ff385bade}{\+\_\+3\+D\+\_\+}~3
+\item 
+\#define \hyperlink{g3x__macros_8h_a207fd5507206d307cd63f95374fcd00d}{X}~0
+\item 
+\#define \hyperlink{g3x__macros_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}~1
+\item 
+\#define \hyperlink{g3x__macros_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}~2
+\item 
+\#define \hyperlink{g3x__macros_8h_ac56376393e6e209a195047df65d435bf}{G3\+Xmapscal}(V,  a)
+\item 
+\#define \hyperlink{g3x__macros_8h_a94908ab177e56ad50a4774fd4bf497be}{G3\+Xmapscal4}(V,  a)
+\item 
+\#define \hyperlink{g3x__macros_8h_a55f11bd572a8bb4b1c52479ca6ba53f1}{G3\+Xmapvect}(V,  W)
+\item 
+\#define \hyperlink{g3x__macros_8h_ab5c5628d99acd826c9a8db0b224a643c}{G3\+Xmapvect4}(V,  W)
+\item 
+\#define \hyperlink{g3x__macros_8h_ad0dfb780d62cc7d70d5d9ce5d1d03496}{G3\+Xzero}(A)~((A)\mbox{[}0\mbox{]}=(A)\mbox{[}1\mbox{]}=(A)\mbox{[}2\mbox{]}=0.)
+\item 
+\#define \hyperlink{g3x__macros_8h_a31ab361f6fe86a473951dfce253c74ed}{G3\+Xzero4}(A)~((A)\mbox{[}0\mbox{]}=(A)\mbox{[}1\mbox{]}=(A)\mbox{[}2\mbox{]}=(A)\mbox{[}3\mbox{]}=0.)
+\item 
+\#define \hyperlink{g3x__macros_8h_a1e81b957b89ab795f57ede8a410224b2}{G3\+Xcopy}(A,  B)
+\item 
+\#define \hyperlink{g3x__macros_8h_addf0bbac74c0de616be94fc92e192458}{G3\+Xcopy4}(A,  B)
+\item 
+\#define \hyperlink{g3x__macros_8h_ad1d7910b0943e3e12363f5e4ef2e6ec2}{G3\+Xset}(A,  x,  y,  z)
+\item 
+\#define \hyperlink{g3x__macros_8h_ab2d4d57076bcde8c7c360173849e7227}{G3\+Xset4}(A,  x,  y,  z,  a)
+\item 
+\#define \hyperlink{g3x__macros_8h_af33e42d314fbbd62a2cefc3a034a434e}{G3\+Xsqrdist}(A,  B)~(\hyperlink{g3x__types_8h_ad41630f833e920c1ffa34722f45a8e77}{S\+QR}((B)\mbox{[}0\mbox{]}-\/(A)\mbox{[}0\mbox{]})+\hyperlink{g3x__types_8h_ad41630f833e920c1ffa34722f45a8e77}{S\+QR}((B)\mbox{[}1\mbox{]}-\/(A)\mbox{[}1\mbox{]})+\hyperlink{g3x__types_8h_ad41630f833e920c1ffa34722f45a8e77}{S\+QR}((B)\mbox{[}2\mbox{]}-\/(A)\mbox{[}2\mbox{]}))
+\item 
+\#define \hyperlink{g3x__macros_8h_a5d4c62b0b606f68ea3be3d2a27f81707}{G3\+Xdist}(A,  B)~sqrt(\hyperlink{g3x__macros_8h_af33e42d314fbbd62a2cefc3a034a434e}{G3\+Xsqrdist}((A),(B)))
+\item 
+\#define \hyperlink{g3x__macros_8h_acb8015aa925c393a2f6445242fe423ad}{G3\+Xsqrnorm}(V)~((V)\mbox{[}0\mbox{]}$\ast$(V)\mbox{[}0\mbox{]}+(V)\mbox{[}1\mbox{]}$\ast$(V)\mbox{[}1\mbox{]}+(V)\mbox{[}2\mbox{]}$\ast$(V)\mbox{[}2\mbox{]})
+\item 
+\#define \hyperlink{g3x__macros_8h_a43b16a952248e81ed1484e26936cfc49}{G3\+Xnorm}(V)~sqrt(\hyperlink{g3x__macros_8h_acb8015aa925c393a2f6445242fe423ad}{G3\+Xsqrnorm}(V))
+\item 
+\#define \hyperlink{g3x__macros_8h_a8a1af59c96e3316a84caf1001f40f896}{G3\+Xsetvect}(V,  A,  B)
+\item 
+\#define \hyperlink{g3x__macros_8h_ad558c7f57483ed2b9ae712f5e68f7911}{G3\+Xaddvect}(V,  W)
+\item 
+\#define \hyperlink{g3x__macros_8h_ae21b5bcaed069e3645cda797509be3d5}{G3\+Xsubvect}(V,  W)
+\item 
+\#define \hyperlink{g3x__macros_8h_a81a31c0c5b215c115442fccbb603af66}{G3\+Xmulvect}(V,  a)
+\item 
+\#define \hyperlink{g3x__macros_8h_a7c2e38483d6987e34fdf6cc0baf69107}{G3\+Xnormalize}(V)~\{ \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} \+\_\+\+\_\+norm\+\_\+\+\_\+=1./\hyperlink{g3x__macros_8h_a43b16a952248e81ed1484e26936cfc49}{G3\+Xnorm}(V); \hyperlink{g3x__macros_8h_a81a31c0c5b215c115442fccbb603af66}{G3\+Xmulvect}(V,\+\_\+\+\_\+norm\+\_\+\+\_\+); \}
+\item 
+\#define \hyperlink{g3x__macros_8h_aca920195885b384750ceb3d835996710}{G3\+Xprodscal}(U,  V)~((U)\mbox{[}0\mbox{]}$\ast$(V)\mbox{[}0\mbox{]}+(U)\mbox{[}1\mbox{]}$\ast$(V)\mbox{[}1\mbox{]}+(U)\mbox{[}2\mbox{]}$\ast$(V)\mbox{[}2\mbox{]})
+\item 
+\#define \hyperlink{g3x__macros_8h_a222d14b2181e20114bce8e21291618fb}{G3\+Xprodvect}(UV,  U,  V)
+\item 
+\#define \hyperlink{g3x__macros_8h_aba90e6e6d898c1f3a0758852a9011839}{G3\+Xprodvect3point}(A\+BC,  A,  B,  C)
+\item 
+\#define \hyperlink{g3x__macros_8h_ad0cab0ecdaf63e169984a39fa3a892cd}{G3\+Xmilieu}(A,  B)~(\hyperlink{g3x__types_8h_a656d1bc95bdef5a54decde84cfe9f60a}{G3\+Xpoint})\{(A\mbox{[}0\mbox{]}+B\mbox{[}0\mbox{]})$\ast$0.\+5,(A\mbox{[}1\mbox{]}+B\mbox{[}1\mbox{]})$\ast$0.\+5,(A\mbox{[}2\mbox{]}+B\mbox{[}2\mbox{]})$\ast$0.\+5\}
+\item 
+\#define \hyperlink{g3x__macros_8h_a8ff3b474b13d9404789c82caab23cb72}{G3\+Xmid}(G,  A,  B)
+\item 
+\#define \hyperlink{g3x__macros_8h_a1d95dcc03168c348373136212b41e6fe}{G3\+Xbary}(G,  A,  B,  C)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{g3x__macros_8h_a1e0891b03fcbb36775d928aad1f9b56c}\label{g3x__macros_8h_a1e0891b03fcbb36775d928aad1f9b56c}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!\+\_\+2\+D\+\_\+@{\+\_\+2\+D\+\_\+}}
+\index{\+\_\+2\+D\+\_\+@{\+\_\+2\+D\+\_\+}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+2\+D\+\_\+}{\_2D\_}}
+{\footnotesize\ttfamily \#define \+\_\+2\+D\+\_\+~2}
+
+\mbox{\Hypertarget{g3x__macros_8h_ae3b8dbaa45162d7a8dd8b41ff385bade}\label{g3x__macros_8h_ae3b8dbaa45162d7a8dd8b41ff385bade}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!\+\_\+3\+D\+\_\+@{\+\_\+3\+D\+\_\+}}
+\index{\+\_\+3\+D\+\_\+@{\+\_\+3\+D\+\_\+}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+3\+D\+\_\+}{\_3D\_}}
+{\footnotesize\ttfamily \#define \+\_\+3\+D\+\_\+~3}
+
+\mbox{\Hypertarget{g3x__macros_8h_a369266c24eacffb87046522897a570d5}\label{g3x__macros_8h_a369266c24eacffb87046522897a570d5}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}{\_GNU\_SOURCE}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}
+
+\mbox{\Hypertarget{g3x__macros_8h_a57b946b5f8e455b24ad9afba402778dd}\label{g3x__macros_8h_a57b946b5f8e455b24ad9afba402778dd}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+X\+\_\+\+M\+A\+C\+R\+OS@{G3\+X\+\_\+\+M\+A\+C\+R\+OS}}
+\index{G3\+X\+\_\+\+M\+A\+C\+R\+OS@{G3\+X\+\_\+\+M\+A\+C\+R\+OS}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+X\+\_\+\+M\+A\+C\+R\+OS}{G3X\_MACROS}}
+{\footnotesize\ttfamily \#define G3\+X\+\_\+\+M\+A\+C\+R\+OS}
+
+\mbox{\Hypertarget{g3x__macros_8h_ad558c7f57483ed2b9ae712f5e68f7911}\label{g3x__macros_8h_ad558c7f57483ed2b9ae712f5e68f7911}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xaddvect@{G3\+Xaddvect}}
+\index{G3\+Xaddvect@{G3\+Xaddvect}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xaddvect}{G3Xaddvect}}
+{\footnotesize\ttfamily \#define G3\+Xaddvect(\begin{DoxyParamCaption}\item[{}]{V,  }\item[{}]{W }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((V)[0]+=(W)[0],\(\backslash\)
+                             (V)[1]+=(W)[1],\(\backslash\)
+                             (V)[2]+=(W)[2])
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_a1d95dcc03168c348373136212b41e6fe}\label{g3x__macros_8h_a1d95dcc03168c348373136212b41e6fe}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xbary@{G3\+Xbary}}
+\index{G3\+Xbary@{G3\+Xbary}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xbary}{G3Xbary}}
+{\footnotesize\ttfamily \#define G3\+Xbary(\begin{DoxyParamCaption}\item[{}]{G,  }\item[{}]{A,  }\item[{}]{B,  }\item[{}]{C }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((G)[0]=((A)[0]+(B)[0]+(C)[0])/3.,\(\backslash\)
+                              (G)[1]=((A)[1]+(B)[1]+(C)[1])/3.,\(\backslash\)
+                              (G)[2]=((A)[2]+(B)[2]+(C)[2])/3.)
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_a1e81b957b89ab795f57ede8a410224b2}\label{g3x__macros_8h_a1e81b957b89ab795f57ede8a410224b2}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xcopy@{G3\+Xcopy}}
+\index{G3\+Xcopy@{G3\+Xcopy}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xcopy}{G3Xcopy}}
+{\footnotesize\ttfamily \#define G3\+Xcopy(\begin{DoxyParamCaption}\item[{}]{A,  }\item[{}]{B }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((A)[0]=(B)[0],\(\backslash\)
+                              (A)[1]=(B)[1],\(\backslash\)
+                              (A)[2]=(B)[2])
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_addf0bbac74c0de616be94fc92e192458}\label{g3x__macros_8h_addf0bbac74c0de616be94fc92e192458}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xcopy4@{G3\+Xcopy4}}
+\index{G3\+Xcopy4@{G3\+Xcopy4}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xcopy4}{G3Xcopy4}}
+{\footnotesize\ttfamily \#define G3\+Xcopy4(\begin{DoxyParamCaption}\item[{}]{A,  }\item[{}]{B }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((A)[0]=(B)[0],\(\backslash\)
+                              (A)[1]=(B)[1],\(\backslash\)
+                              (A)[2]=(B)[2],\(\backslash\)
+                              (A)[3]=(B)[3])
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_a5d4c62b0b606f68ea3be3d2a27f81707}\label{g3x__macros_8h_a5d4c62b0b606f68ea3be3d2a27f81707}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xdist@{G3\+Xdist}}
+\index{G3\+Xdist@{G3\+Xdist}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xdist}{G3Xdist}}
+{\footnotesize\ttfamily \#define G3\+Xdist(\begin{DoxyParamCaption}\item[{}]{A,  }\item[{}]{B }\end{DoxyParamCaption})~sqrt(\hyperlink{g3x__macros_8h_af33e42d314fbbd62a2cefc3a034a434e}{G3\+Xsqrdist}((A),(B)))}
+
+\mbox{\Hypertarget{g3x__macros_8h_ac56376393e6e209a195047df65d435bf}\label{g3x__macros_8h_ac56376393e6e209a195047df65d435bf}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xmapscal@{G3\+Xmapscal}}
+\index{G3\+Xmapscal@{G3\+Xmapscal}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xmapscal}{G3Xmapscal}}
+{\footnotesize\ttfamily \#define G3\+Xmapscal(\begin{DoxyParamCaption}\item[{}]{V,  }\item[{}]{a }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\hyperlink{g3x__types_8h_a6d8c21320b5e6f875891e6684e3d2e58}{G3Xcoord})\{(V)[0]*a,\(\backslash\)
+                                        (V)[1]*a,\(\backslash\)
+                                        (V)[2]*a\}
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_a94908ab177e56ad50a4774fd4bf497be}\label{g3x__macros_8h_a94908ab177e56ad50a4774fd4bf497be}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xmapscal4@{G3\+Xmapscal4}}
+\index{G3\+Xmapscal4@{G3\+Xmapscal4}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xmapscal4}{G3Xmapscal4}}
+{\footnotesize\ttfamily \#define G3\+Xmapscal4(\begin{DoxyParamCaption}\item[{}]{V,  }\item[{}]{a }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\hyperlink{g3x__types_8h_afc484f732c62f1a0417034e535352e30}{G3Xcolor})\{(V)[0]*a,\(\backslash\)
+                                        (V)[1]*a,\(\backslash\)
+                                        (V)[2]*a,\(\backslash\)
+                                        (V)[3]*a\}
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_a55f11bd572a8bb4b1c52479ca6ba53f1}\label{g3x__macros_8h_a55f11bd572a8bb4b1c52479ca6ba53f1}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xmapvect@{G3\+Xmapvect}}
+\index{G3\+Xmapvect@{G3\+Xmapvect}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xmapvect}{G3Xmapvect}}
+{\footnotesize\ttfamily \#define G3\+Xmapvect(\begin{DoxyParamCaption}\item[{}]{V,  }\item[{}]{W }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\hyperlink{g3x__types_8h_a6d8c21320b5e6f875891e6684e3d2e58}{G3Xcoord})\{(V)[0]*(W)[0],\(\backslash\)
+                                         (V)[1]*(W)[1],\(\backslash\)
+                                         (V)[2]*(W)[2]\}
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_ab5c5628d99acd826c9a8db0b224a643c}\label{g3x__macros_8h_ab5c5628d99acd826c9a8db0b224a643c}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xmapvect4@{G3\+Xmapvect4}}
+\index{G3\+Xmapvect4@{G3\+Xmapvect4}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xmapvect4}{G3Xmapvect4}}
+{\footnotesize\ttfamily \#define G3\+Xmapvect4(\begin{DoxyParamCaption}\item[{}]{V,  }\item[{}]{W }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\hyperlink{g3x__types_8h_afc484f732c62f1a0417034e535352e30}{G3Xcolor})\{(V)[0]*(W)[0],\(\backslash\)
+                                         (V)[1]*(W)[1],\(\backslash\)
+                                         (V)[2]*(W)[2],\(\backslash\)
+                                         (V)[3]*(W)[3]\}
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_a8ff3b474b13d9404789c82caab23cb72}\label{g3x__macros_8h_a8ff3b474b13d9404789c82caab23cb72}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xmid@{G3\+Xmid}}
+\index{G3\+Xmid@{G3\+Xmid}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xmid}{G3Xmid}}
+{\footnotesize\ttfamily \#define G3\+Xmid(\begin{DoxyParamCaption}\item[{}]{G,  }\item[{}]{A,  }\item[{}]{B }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((G)[0]=((A)[0]+(B)[0])*0.5,\(\backslash\)
+                              (G)[1]=((A)[1]+(B)[1])*0.5,\(\backslash\)
+                              (G)[2]=((A)[2]+(B)[2])*0.5)
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_ad0cab0ecdaf63e169984a39fa3a892cd}\label{g3x__macros_8h_ad0cab0ecdaf63e169984a39fa3a892cd}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xmilieu@{G3\+Xmilieu}}
+\index{G3\+Xmilieu@{G3\+Xmilieu}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xmilieu}{G3Xmilieu}}
+{\footnotesize\ttfamily \#define G3\+Xmilieu(\begin{DoxyParamCaption}\item[{}]{A,  }\item[{}]{B }\end{DoxyParamCaption})~(\hyperlink{g3x__types_8h_a656d1bc95bdef5a54decde84cfe9f60a}{G3\+Xpoint})\{(A\mbox{[}0\mbox{]}+B\mbox{[}0\mbox{]})$\ast$0.\+5,(A\mbox{[}1\mbox{]}+B\mbox{[}1\mbox{]})$\ast$0.\+5,(A\mbox{[}2\mbox{]}+B\mbox{[}2\mbox{]})$\ast$0.\+5\}}
+
+\mbox{\Hypertarget{g3x__macros_8h_a81a31c0c5b215c115442fccbb603af66}\label{g3x__macros_8h_a81a31c0c5b215c115442fccbb603af66}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xmulvect@{G3\+Xmulvect}}
+\index{G3\+Xmulvect@{G3\+Xmulvect}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xmulvect}{G3Xmulvect}}
+{\footnotesize\ttfamily \#define G3\+Xmulvect(\begin{DoxyParamCaption}\item[{}]{V,  }\item[{}]{a }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((V)[0]*=a,\(\backslash\)
+                             (V)[1]*=a,\(\backslash\)
+                             (V)[2]*=a)
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_a43b16a952248e81ed1484e26936cfc49}\label{g3x__macros_8h_a43b16a952248e81ed1484e26936cfc49}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xnorm@{G3\+Xnorm}}
+\index{G3\+Xnorm@{G3\+Xnorm}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xnorm}{G3Xnorm}}
+{\footnotesize\ttfamily \#define G3\+Xnorm(\begin{DoxyParamCaption}\item[{}]{V }\end{DoxyParamCaption})~sqrt(\hyperlink{g3x__macros_8h_acb8015aa925c393a2f6445242fe423ad}{G3\+Xsqrnorm}(V))}
+
+\mbox{\Hypertarget{g3x__macros_8h_a7c2e38483d6987e34fdf6cc0baf69107}\label{g3x__macros_8h_a7c2e38483d6987e34fdf6cc0baf69107}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xnormalize@{G3\+Xnormalize}}
+\index{G3\+Xnormalize@{G3\+Xnormalize}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xnormalize}{G3Xnormalize}}
+{\footnotesize\ttfamily \#define G3\+Xnormalize(\begin{DoxyParamCaption}\item[{}]{V }\end{DoxyParamCaption})~\{ \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} \+\_\+\+\_\+norm\+\_\+\+\_\+=1./\hyperlink{g3x__macros_8h_a43b16a952248e81ed1484e26936cfc49}{G3\+Xnorm}(V); \hyperlink{g3x__macros_8h_a81a31c0c5b215c115442fccbb603af66}{G3\+Xmulvect}(V,\+\_\+\+\_\+norm\+\_\+\+\_\+); \}}
+
+\mbox{\Hypertarget{g3x__macros_8h_aca920195885b384750ceb3d835996710}\label{g3x__macros_8h_aca920195885b384750ceb3d835996710}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xprodscal@{G3\+Xprodscal}}
+\index{G3\+Xprodscal@{G3\+Xprodscal}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xprodscal}{G3Xprodscal}}
+{\footnotesize\ttfamily \#define G3\+Xprodscal(\begin{DoxyParamCaption}\item[{}]{U,  }\item[{}]{V }\end{DoxyParamCaption})~((U)\mbox{[}0\mbox{]}$\ast$(V)\mbox{[}0\mbox{]}+(U)\mbox{[}1\mbox{]}$\ast$(V)\mbox{[}1\mbox{]}+(U)\mbox{[}2\mbox{]}$\ast$(V)\mbox{[}2\mbox{]})}
+
+\mbox{\Hypertarget{g3x__macros_8h_a222d14b2181e20114bce8e21291618fb}\label{g3x__macros_8h_a222d14b2181e20114bce8e21291618fb}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xprodvect@{G3\+Xprodvect}}
+\index{G3\+Xprodvect@{G3\+Xprodvect}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xprodvect}{G3Xprodvect}}
+{\footnotesize\ttfamily \#define G3\+Xprodvect(\begin{DoxyParamCaption}\item[{}]{UV,  }\item[{}]{U,  }\item[{}]{V }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((UV)[0]=(U)[1]*(V)[2]-(U)[2]*(V)[1],\(\backslash\)
+                               (UV)[1]=(U)[2]*(V)[0]-(U)[0]*(V)[2],\(\backslash\)
+                               (UV)[2]=(U)[0]*(V)[1]-(U)[1]*(V)[0])
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_aba90e6e6d898c1f3a0758852a9011839}\label{g3x__macros_8h_aba90e6e6d898c1f3a0758852a9011839}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xprodvect3point@{G3\+Xprodvect3point}}
+\index{G3\+Xprodvect3point@{G3\+Xprodvect3point}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xprodvect3point}{G3Xprodvect3point}}
+{\footnotesize\ttfamily \#define G3\+Xprodvect3point(\begin{DoxyParamCaption}\item[{}]{A\+BC,  }\item[{}]{A,  }\item[{}]{B,  }\item[{}]{C }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((ABC)[0]=((B)[1]-(A)[1])*((C)[2]-(A)[2])-((B)[2]-(A)[2])*((C)[1]-(A)[1]),\(\backslash\)
+                                        (ABC)[1]=((B)[2]-(A)[2])*((C)[0]-(A)[0])-((B)[0]-(A)[0])*((C)[2]-(A
+      )[2]),\(\backslash\)
+                                        (ABC)[2]=((B)[0]-(A)[0])*((C)[1]-(A)[1])-((B)[1]-(A)[1])*((C)[0]-(A
+      )[0]))
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_ad1d7910b0943e3e12363f5e4ef2e6ec2}\label{g3x__macros_8h_ad1d7910b0943e3e12363f5e4ef2e6ec2}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xset@{G3\+Xset}}
+\index{G3\+Xset@{G3\+Xset}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xset}{G3Xset}}
+{\footnotesize\ttfamily \#define G3\+Xset(\begin{DoxyParamCaption}\item[{}]{A,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((A)[0]=(x),\(\backslash\)
+                              (A)[1]=(y),\(\backslash\)
+                              (A)[2]=(z))
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_ab2d4d57076bcde8c7c360173849e7227}\label{g3x__macros_8h_ab2d4d57076bcde8c7c360173849e7227}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xset4@{G3\+Xset4}}
+\index{G3\+Xset4@{G3\+Xset4}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xset4}{G3Xset4}}
+{\footnotesize\ttfamily \#define G3\+Xset4(\begin{DoxyParamCaption}\item[{}]{A,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z,  }\item[{}]{a }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((A)[0]=(x),\(\backslash\)
+                              (A)[1]=(y),\(\backslash\)
+                              (A)[2]=(z),\(\backslash\)
+                              (A)[3]=(a))
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_a8a1af59c96e3316a84caf1001f40f896}\label{g3x__macros_8h_a8a1af59c96e3316a84caf1001f40f896}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xsetvect@{G3\+Xsetvect}}
+\index{G3\+Xsetvect@{G3\+Xsetvect}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xsetvect}{G3Xsetvect}}
+{\footnotesize\ttfamily \#define G3\+Xsetvect(\begin{DoxyParamCaption}\item[{}]{V,  }\item[{}]{A,  }\item[{}]{B }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((V)[0]=(B)[0]-(A)[0],\(\backslash\)
+                             (V)[1]=(B)[1]-(A)[1],\(\backslash\)
+                             (V)[2]=(B)[2]-(A)[2])
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_af33e42d314fbbd62a2cefc3a034a434e}\label{g3x__macros_8h_af33e42d314fbbd62a2cefc3a034a434e}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xsqrdist@{G3\+Xsqrdist}}
+\index{G3\+Xsqrdist@{G3\+Xsqrdist}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xsqrdist}{G3Xsqrdist}}
+{\footnotesize\ttfamily \#define G3\+Xsqrdist(\begin{DoxyParamCaption}\item[{}]{A,  }\item[{}]{B }\end{DoxyParamCaption})~(\hyperlink{g3x__types_8h_ad41630f833e920c1ffa34722f45a8e77}{S\+QR}((B)\mbox{[}0\mbox{]}-\/(A)\mbox{[}0\mbox{]})+\hyperlink{g3x__types_8h_ad41630f833e920c1ffa34722f45a8e77}{S\+QR}((B)\mbox{[}1\mbox{]}-\/(A)\mbox{[}1\mbox{]})+\hyperlink{g3x__types_8h_ad41630f833e920c1ffa34722f45a8e77}{S\+QR}((B)\mbox{[}2\mbox{]}-\/(A)\mbox{[}2\mbox{]}))}
+
+\mbox{\Hypertarget{g3x__macros_8h_acb8015aa925c393a2f6445242fe423ad}\label{g3x__macros_8h_acb8015aa925c393a2f6445242fe423ad}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xsqrnorm@{G3\+Xsqrnorm}}
+\index{G3\+Xsqrnorm@{G3\+Xsqrnorm}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xsqrnorm}{G3Xsqrnorm}}
+{\footnotesize\ttfamily \#define G3\+Xsqrnorm(\begin{DoxyParamCaption}\item[{}]{V }\end{DoxyParamCaption})~((V)\mbox{[}0\mbox{]}$\ast$(V)\mbox{[}0\mbox{]}+(V)\mbox{[}1\mbox{]}$\ast$(V)\mbox{[}1\mbox{]}+(V)\mbox{[}2\mbox{]}$\ast$(V)\mbox{[}2\mbox{]})}
+
+\mbox{\Hypertarget{g3x__macros_8h_ae21b5bcaed069e3645cda797509be3d5}\label{g3x__macros_8h_ae21b5bcaed069e3645cda797509be3d5}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xsubvect@{G3\+Xsubvect}}
+\index{G3\+Xsubvect@{G3\+Xsubvect}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xsubvect}{G3Xsubvect}}
+{\footnotesize\ttfamily \#define G3\+Xsubvect(\begin{DoxyParamCaption}\item[{}]{V,  }\item[{}]{W }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((V)[0]-=(W)[0],\(\backslash\)
+                             (V)[1]-=(W)[1],\(\backslash\)
+                             (V)[2]-=(W)[2])
+\end{DoxyCode}
+\mbox{\Hypertarget{g3x__macros_8h_ad0dfb780d62cc7d70d5d9ce5d1d03496}\label{g3x__macros_8h_ad0dfb780d62cc7d70d5d9ce5d1d03496}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xzero@{G3\+Xzero}}
+\index{G3\+Xzero@{G3\+Xzero}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xzero}{G3Xzero}}
+{\footnotesize\ttfamily \#define G3\+Xzero(\begin{DoxyParamCaption}\item[{}]{A }\end{DoxyParamCaption})~((A)\mbox{[}0\mbox{]}=(A)\mbox{[}1\mbox{]}=(A)\mbox{[}2\mbox{]}=0.)}
+
+\mbox{\Hypertarget{g3x__macros_8h_a31ab361f6fe86a473951dfce253c74ed}\label{g3x__macros_8h_a31ab361f6fe86a473951dfce253c74ed}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!G3\+Xzero4@{G3\+Xzero4}}
+\index{G3\+Xzero4@{G3\+Xzero4}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{G3\+Xzero4}{G3Xzero4}}
+{\footnotesize\ttfamily \#define G3\+Xzero4(\begin{DoxyParamCaption}\item[{}]{A }\end{DoxyParamCaption})~((A)\mbox{[}0\mbox{]}=(A)\mbox{[}1\mbox{]}=(A)\mbox{[}2\mbox{]}=(A)\mbox{[}3\mbox{]}=0.)}
+
+\mbox{\Hypertarget{g3x__macros_8h_a207fd5507206d307cd63f95374fcd00d}\label{g3x__macros_8h_a207fd5507206d307cd63f95374fcd00d}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!X@{X}}
+\index{X@{X}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily \#define X~0}
+
+\mbox{\Hypertarget{g3x__macros_8h_a798e4073d613ca5ba9618e1b3253df14}\label{g3x__macros_8h_a798e4073d613ca5ba9618e1b3253df14}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!Y@{Y}}
+\index{Y@{Y}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily \#define Y~1}
+
+\mbox{\Hypertarget{g3x__macros_8h_a51591cf51bdd6c1f6015532422e7770e}\label{g3x__macros_8h_a51591cf51bdd6c1f6015532422e7770e}} 
+\index{g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}!Z@{Z}}
+\index{Z@{Z}!g3x\+\_\+macros.\+h@{g3x\+\_\+macros.\+h}}
+\subsubsection{\texorpdfstring{Z}{Z}}
+{\footnotesize\ttfamily \#define Z~2}
+

@@ -1,0 +1,132 @@
+\hypertarget{_parser_8c}{}\section{src/\+Parser.c File Reference}
+\label{_parser_8c}\index{src/\+Parser.\+c@{src/\+Parser.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+{\ttfamily \#include $<$libxml/parser.\+h$>$}\newline
+{\ttfamily \#include $<$libxml/tree.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Parser.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Object.\+h\char`\"{}}\newline
+Include dependency graph for Parser.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_parser_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_parser_8c_ac630a552654ff11d4ef1eb4efb9eed85}{M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG}~8888
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{_parser_8c_a1b8a022d1d786cdb936ee5a0f5ab730b}{fct\+\_\+parcours\+\_\+t}) (xml\+Node\+Ptr)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_parser_8c_a7d3e8a4a1e3ca923e8adb94a6a5c662d}{parse\+\_\+\+X\+M\+L\+\_\+scene} (const char $\ast$input\+\_\+path, \hyperlink{struct_scene}{Scene} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em parse a X\+ML scene \end{DoxyCompactList}\item 
+void \hyperlink{_parser_8c_a0b07aaf5d9b84d9c600364a1cb3a767d}{lray\+\_\+help} ()
+\begin{DoxyCompactList}\small\item\em help message of lray program \end{DoxyCompactList}\item 
+void \hyperlink{_parser_8c_ad23d60505728d0a0307d982a5f33f645}{lray\+\_\+usage} ()
+\begin{DoxyCompactList}\small\item\em usage message of lray program \end{DoxyCompactList}\item 
+int \hyperlink{_parser_8c_a4e06f38149b72532c14447739d586816}{double\+\_\+arg} (char c, int arg)
+\item 
+int \hyperlink{_parser_8c_a011af2f67fb95e38b5839fe1fa6c452e}{parse\+\_\+args} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{struct_option}{Option} $\ast$options)
+\begin{DoxyCompactList}\small\item\em parse user arguments from the command line \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_parser_8c_ac630a552654ff11d4ef1eb4efb9eed85}\label{_parser_8c_ac630a552654ff11d4ef1eb4efb9eed85}} 
+\index{Parser.\+c@{Parser.\+c}!M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG@{M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG}}
+\index{M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG@{M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG}!Parser.\+c@{Parser.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG}{MAX\_PIXEL\_SAMPLING}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+I\+X\+E\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG~8888}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_parser_8c_a1b8a022d1d786cdb936ee5a0f5ab730b}\label{_parser_8c_a1b8a022d1d786cdb936ee5a0f5ab730b}} 
+\index{Parser.\+c@{Parser.\+c}!fct\+\_\+parcours\+\_\+t@{fct\+\_\+parcours\+\_\+t}}
+\index{fct\+\_\+parcours\+\_\+t@{fct\+\_\+parcours\+\_\+t}!Parser.\+c@{Parser.\+c}}
+\subsubsection{\texorpdfstring{fct\+\_\+parcours\+\_\+t}{fct\_parcours\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ fct\+\_\+parcours\+\_\+t) (xml\+Node\+Ptr)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_parser_8c_a4e06f38149b72532c14447739d586816}\label{_parser_8c_a4e06f38149b72532c14447739d586816}} 
+\index{Parser.\+c@{Parser.\+c}!double\+\_\+arg@{double\+\_\+arg}}
+\index{double\+\_\+arg@{double\+\_\+arg}!Parser.\+c@{Parser.\+c}}
+\subsubsection{\texorpdfstring{double\+\_\+arg()}{double\_arg()}}
+{\footnotesize\ttfamily int double\+\_\+arg (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{int}]{arg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_parser_8c_a0b07aaf5d9b84d9c600364a1cb3a767d}\label{_parser_8c_a0b07aaf5d9b84d9c600364a1cb3a767d}} 
+\index{Parser.\+c@{Parser.\+c}!lray\+\_\+help@{lray\+\_\+help}}
+\index{lray\+\_\+help@{lray\+\_\+help}!Parser.\+c@{Parser.\+c}}
+\subsubsection{\texorpdfstring{lray\+\_\+help()}{lray\_help()}}
+{\footnotesize\ttfamily void lray\+\_\+help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+help message of lray program 
+
+\mbox{\Hypertarget{_parser_8c_ad23d60505728d0a0307d982a5f33f645}\label{_parser_8c_ad23d60505728d0a0307d982a5f33f645}} 
+\index{Parser.\+c@{Parser.\+c}!lray\+\_\+usage@{lray\+\_\+usage}}
+\index{lray\+\_\+usage@{lray\+\_\+usage}!Parser.\+c@{Parser.\+c}}
+\subsubsection{\texorpdfstring{lray\+\_\+usage()}{lray\_usage()}}
+{\footnotesize\ttfamily void lray\+\_\+usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+usage message of lray program 
+
+\mbox{\Hypertarget{_parser_8c_a011af2f67fb95e38b5839fe1fa6c452e}\label{_parser_8c_a011af2f67fb95e38b5839fe1fa6c452e}} 
+\index{Parser.\+c@{Parser.\+c}!parse\+\_\+args@{parse\+\_\+args}}
+\index{parse\+\_\+args@{parse\+\_\+args}!Parser.\+c@{Parser.\+c}}
+\subsubsection{\texorpdfstring{parse\+\_\+args()}{parse\_args()}}
+{\footnotesize\ttfamily int parse\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{struct_option}{Option} $\ast$}]{options }\end{DoxyParamCaption})}
+
+
+
+parse user arguments from the command line 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of arguments \\
+\hline
+{\em argv} & all arguments \\
+\hline
+{\em options} & all options specified by user in a type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the parsing fails~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_parser_8c_a7d3e8a4a1e3ca923e8adb94a6a5c662d}\label{_parser_8c_a7d3e8a4a1e3ca923e8adb94a6a5c662d}} 
+\index{Parser.\+c@{Parser.\+c}!parse\+\_\+\+X\+M\+L\+\_\+scene@{parse\+\_\+\+X\+M\+L\+\_\+scene}}
+\index{parse\+\_\+\+X\+M\+L\+\_\+scene@{parse\+\_\+\+X\+M\+L\+\_\+scene}!Parser.\+c@{Parser.\+c}}
+\subsubsection{\texorpdfstring{parse\+\_\+\+X\+M\+L\+\_\+scene()}{parse\_XML\_scene()}}
+{\footnotesize\ttfamily int parse\+\_\+\+X\+M\+L\+\_\+scene (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input\+\_\+path,  }\item[{\hyperlink{struct_scene}{Scene} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+parse a X\+ML scene 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+path} & path of the scene file \\
+\hline
+{\em scene} & the scene to build \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a err occurs ( file not found or parsing error)~\newline
+ 1 successful parsing 
+\end{DoxyReturn}

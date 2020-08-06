@@ -1,0 +1,108 @@
+\hypertarget{struct_object}{}\section{Object Struct Reference}
+\label{struct_object}\index{Object@{Object}}
+
+
+an object  
+
+
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+
+
+Collaboration diagram for Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{struct_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_object_8h_af3ec464aa442c2d0bd0c227fda28a8be}{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT} \hyperlink{struct_object_a19f6ed1bac9f5cab449a607abca42685}{canonique}
+\item 
+int \hyperlink{struct_object_ac8b96df3945daad611d0e916baf3fd33}{shininess}
+\item 
+\hyperlink{struct_color}{Color} \hyperlink{struct_object_aa5f4d1eda21c196bd8401ff73f105073}{color}
+\item 
+\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} \hyperlink{struct_object_a7b9fa288e1cec876534bd6f5b17aa049}{specular\+\_\+reflection\+\_\+coeff} \mbox{[}3\mbox{]}
+\item 
+\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} \hyperlink{struct_object_a365382686d7b8904ca564cd7745a7dbe}{diffuse\+\_\+reflection\+\_\+coeff} \mbox{[}3\mbox{]}
+\item 
+int($\ast$ \hyperlink{struct_object_a3f68899f8db0dc480e823d27163e1639}{rayon\+\_\+inter} )(const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, \hyperlink{struct_point}{Point} $\ast$I, \hyperlink{struct_vecteur}{Vecteur} $\ast$N)
+\item 
+\hyperlink{_hmat_8h_a7263a9d077d77f58425e01446b766c9f}{Hmat} \hyperlink{struct_object_a2e39a1b3b70d4fad8a907b217ef63f59}{Md}
+\item 
+\hyperlink{_hmat_8h_a7263a9d077d77f58425e01446b766c9f}{Hmat} \hyperlink{struct_object_ab0efdf841b049d1b6f42f1c6c28a9557}{Mi}
+\item 
+\hyperlink{_hmat_8h_a7263a9d077d77f58425e01446b766c9f}{Hmat} \hyperlink{struct_object_a377e7ee9e852999ea0e10c66d74ddfb4}{Mn}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+an object 
+
+\hyperlink{struct_object}{Object} is a type representing a shape 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_object_a19f6ed1bac9f5cab449a607abca42685}\label{struct_object_a19f6ed1bac9f5cab449a607abca42685}} 
+\index{Object@{Object}!canonique@{canonique}}
+\index{canonique@{canonique}!Object@{Object}}
+\subsubsection{\texorpdfstring{canonique}{canonique}}
+{\footnotesize\ttfamily \hyperlink{_object_8h_af3ec464aa442c2d0bd0c227fda28a8be}{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT} canonique}
+
+reference to the canonical object \mbox{\Hypertarget{struct_object_aa5f4d1eda21c196bd8401ff73f105073}\label{struct_object_aa5f4d1eda21c196bd8401ff73f105073}} 
+\index{Object@{Object}!color@{color}}
+\index{color@{color}!Object@{Object}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \hyperlink{struct_color}{Color} color}
+
+R\+GB color \mbox{\Hypertarget{struct_object_a365382686d7b8904ca564cd7745a7dbe}\label{struct_object_a365382686d7b8904ca564cd7745a7dbe}} 
+\index{Object@{Object}!diffuse\+\_\+reflection\+\_\+coeff@{diffuse\+\_\+reflection\+\_\+coeff}}
+\index{diffuse\+\_\+reflection\+\_\+coeff@{diffuse\+\_\+reflection\+\_\+coeff}!Object@{Object}}
+\subsubsection{\texorpdfstring{diffuse\+\_\+reflection\+\_\+coeff}{diffuse\_reflection\_coeff}}
+{\footnotesize\ttfamily \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} diffuse\+\_\+reflection\+\_\+coeff\mbox{[}3\mbox{]}}
+
+R\+GB coefficient between 0 and 1 \mbox{\Hypertarget{struct_object_a2e39a1b3b70d4fad8a907b217ef63f59}\label{struct_object_a2e39a1b3b70d4fad8a907b217ef63f59}} 
+\index{Object@{Object}!Md@{Md}}
+\index{Md@{Md}!Object@{Object}}
+\subsubsection{\texorpdfstring{Md}{Md}}
+{\footnotesize\ttfamily \hyperlink{_hmat_8h_a7263a9d077d77f58425e01446b766c9f}{Hmat} Md}
+
+\mbox{\Hypertarget{struct_object_ab0efdf841b049d1b6f42f1c6c28a9557}\label{struct_object_ab0efdf841b049d1b6f42f1c6c28a9557}} 
+\index{Object@{Object}!Mi@{Mi}}
+\index{Mi@{Mi}!Object@{Object}}
+\subsubsection{\texorpdfstring{Mi}{Mi}}
+{\footnotesize\ttfamily \hyperlink{_hmat_8h_a7263a9d077d77f58425e01446b766c9f}{Hmat} Mi}
+
+\mbox{\Hypertarget{struct_object_a377e7ee9e852999ea0e10c66d74ddfb4}\label{struct_object_a377e7ee9e852999ea0e10c66d74ddfb4}} 
+\index{Object@{Object}!Mn@{Mn}}
+\index{Mn@{Mn}!Object@{Object}}
+\subsubsection{\texorpdfstring{Mn}{Mn}}
+{\footnotesize\ttfamily \hyperlink{_hmat_8h_a7263a9d077d77f58425e01446b766c9f}{Hmat} Mn}
+
+direct, inverse and normal homogeneous matrices \mbox{\Hypertarget{struct_object_a3f68899f8db0dc480e823d27163e1639}\label{struct_object_a3f68899f8db0dc480e823d27163e1639}} 
+\index{Object@{Object}!rayon\+\_\+inter@{rayon\+\_\+inter}}
+\index{rayon\+\_\+inter@{rayon\+\_\+inter}!Object@{Object}}
+\subsubsection{\texorpdfstring{rayon\+\_\+inter}{rayon\_inter}}
+{\footnotesize\ttfamily int($\ast$ rayon\+\_\+inter) (const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, \hyperlink{struct_point}{Point} $\ast$I, \hyperlink{struct_vecteur}{Vecteur} $\ast$N)}
+
+1 if the object is seen from point A, 0 otherwise \mbox{\Hypertarget{struct_object_ac8b96df3945daad611d0e916baf3fd33}\label{struct_object_ac8b96df3945daad611d0e916baf3fd33}} 
+\index{Object@{Object}!shininess@{shininess}}
+\index{shininess@{shininess}!Object@{Object}}
+\subsubsection{\texorpdfstring{shininess}{shininess}}
+{\footnotesize\ttfamily int shininess}
+
+value between 2 and 256 \mbox{\Hypertarget{struct_object_a7b9fa288e1cec876534bd6f5b17aa049}\label{struct_object_a7b9fa288e1cec876534bd6f5b17aa049}} 
+\index{Object@{Object}!specular\+\_\+reflection\+\_\+coeff@{specular\+\_\+reflection\+\_\+coeff}}
+\index{specular\+\_\+reflection\+\_\+coeff@{specular\+\_\+reflection\+\_\+coeff}!Object@{Object}}
+\subsubsection{\texorpdfstring{specular\+\_\+reflection\+\_\+coeff}{specular\_reflection\_coeff}}
+{\footnotesize\ttfamily \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} specular\+\_\+reflection\+\_\+coeff\mbox{[}3\mbox{]}}
+
+R\+GB coefficient between 0 and 1 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_object_8h}{Object.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+\hypertarget{_cube_8h}{}\section{include/\+Cube.h File Reference}
+\label{_cube_8h}\index{include/\+Cube.\+h@{include/\+Cube.\+h}}
+
+
+contains the \hyperlink{struct_cube}{Cube} type and functions related to it  
+
+
+{\ttfamily \#include \char`\"{}Color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Vecteur.\+h\char`\"{}}\newline
+Include dependency graph for Cube.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{_cube_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_cube_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_cube}{Cube}
+\begin{DoxyCompactList}\small\item\em a cube \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_cube_8h_a06ac4d820420861ff628acafbb739cc2}{set\+Cube} (\hyperlink{struct_cube}{Cube} $\ast$cube, const \hyperlink{struct_point}{Point} $\ast$center, const \hyperlink{struct_color}{Color} $\ast$color, \hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double} rayon)
+\begin{DoxyCompactList}\small\item\em sets a cube by the specified parameters \end{DoxyCompactList}\item 
+int \hyperlink{_cube_8h_a41a11ebe8d665aa3cf2735e2bb1de084}{rayon\+\_\+inter\+\_\+\+Cube} (const \hyperlink{struct_point}{Point} $\ast$A, const \hyperlink{struct_vecteur}{Vecteur} $\ast$u, \hyperlink{struct_point}{Point} $\ast$I, \hyperlink{struct_vecteur}{Vecteur} $\ast$N)
+\begin{DoxyCompactList}\small\item\em check the intersection between a line (A, u) and the canonical cube \end{DoxyCompactList}\item 
+int \hyperlink{_cube_8h_abfe9d0a3cc9b3586ef37cc49844e9481}{Cube\+Console\+Display} (const \hyperlink{struct_cube}{Cube} $\ast$cube, int return\+\_\+line)
+\begin{DoxyCompactList}\small\item\em print a cube in the console \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains the \hyperlink{struct_cube}{Cube} type and functions related to it 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Manuel E\+R\+I\+A\+LC -\/ Hadjer D\+J\+E\+R\+R\+O\+U\+MI 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 juin 2020
+\end{DoxyDate}
+represents a cube in 3D space and functions related to it 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_cube_8h_abfe9d0a3cc9b3586ef37cc49844e9481}\label{_cube_8h_abfe9d0a3cc9b3586ef37cc49844e9481}} 
+\index{Cube.\+h@{Cube.\+h}!Cube\+Console\+Display@{Cube\+Console\+Display}}
+\index{Cube\+Console\+Display@{Cube\+Console\+Display}!Cube.\+h@{Cube.\+h}}
+\subsubsection{\texorpdfstring{Cube\+Console\+Display()}{CubeConsoleDisplay()}}
+{\footnotesize\ttfamily int Cube\+Console\+Display (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_cube}{Cube} $\ast$}]{cube,  }\item[{int}]{return\+\_\+line }\end{DoxyParamCaption})}
+
+
+
+print a cube in the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cube} & the cube to print \\
+\hline
+{\em return\+\_\+line} & != 0 if we want to add a \textquotesingle{}~\newline
+\textquotesingle{} after the print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(cube == N\+U\+LL)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_cube_8h_a41a11ebe8d665aa3cf2735e2bb1de084}\label{_cube_8h_a41a11ebe8d665aa3cf2735e2bb1de084}} 
+\index{Cube.\+h@{Cube.\+h}!rayon\+\_\+inter\+\_\+\+Cube@{rayon\+\_\+inter\+\_\+\+Cube}}
+\index{rayon\+\_\+inter\+\_\+\+Cube@{rayon\+\_\+inter\+\_\+\+Cube}!Cube.\+h@{Cube.\+h}}
+\subsubsection{\texorpdfstring{rayon\+\_\+inter\+\_\+\+Cube()}{rayon\_inter\_Cube()}}
+{\footnotesize\ttfamily int rayon\+\_\+inter\+\_\+\+Cube (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_point}{Point} $\ast$}]{A,  }\item[{const \hyperlink{struct_vecteur}{Vecteur} $\ast$}]{u,  }\item[{\hyperlink{struct_point}{Point} $\ast$}]{I,  }\item[{\hyperlink{struct_vecteur}{Vecteur} $\ast$}]{N }\end{DoxyParamCaption})}
+
+
+
+check the intersection between a line (A, u) and the canonical cube 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & a point of the line \\
+\hline
+{\em u} & the normalized director vector of the line \\
+\hline
+{\em I} & the intersection point if it exists \\
+\hline
+{\em N} & the normal vector in I \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_cube_8h_a06ac4d820420861ff628acafbb739cc2}\label{_cube_8h_a06ac4d820420861ff628acafbb739cc2}} 
+\index{Cube.\+h@{Cube.\+h}!set\+Cube@{set\+Cube}}
+\index{set\+Cube@{set\+Cube}!Cube.\+h@{Cube.\+h}}
+\subsubsection{\texorpdfstring{set\+Cube()}{setCube()}}
+{\footnotesize\ttfamily int set\+Cube (\begin{DoxyParamCaption}\item[{\hyperlink{struct_cube}{Cube} $\ast$}]{cube,  }\item[{const \hyperlink{struct_point}{Point} $\ast$}]{center,  }\item[{const \hyperlink{struct_color}{Color} $\ast$}]{color,  }\item[{\hyperlink{g3x__transfo_8h_a89b2b23e407882a535d835574a7912e1}{double}}]{rayon }\end{DoxyParamCaption})}
+
+
+
+sets a cube by the specified parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cube} & the cube to set \\
+\hline
+{\em center} & ther new center \\
+\hline
+{\em color} & the new color \\
+\hline
+{\em rayon} & the new radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a error occurs(one parameter is N\+U\+L\+L)~\newline
+ 1 otherwise 
+\end{DoxyReturn}

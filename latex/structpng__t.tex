@@ -1,0 +1,127 @@
+\hypertarget{structpng__t}{}\section{png\+\_\+t Struct Reference}
+\label{structpng__t}\index{png\+\_\+t@{png\+\_\+t}}
+
+
+a type representing a png image  
+
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{structpng__t_ad721fc6ca6a3d6ba3bc506576622aab0}{capacity}
+\item 
+char $\ast$ \hyperlink{structpng__t_a91a70b77df95bd8b0830b49a094c2acb}{data}
+\item 
+size\+\_\+t \hyperlink{structpng__t_a02bed8590a9ddf520e58a060059518ec}{width}
+\item 
+size\+\_\+t \hyperlink{structpng__t_a02afeaaf8574e7a78d6b466ff2695052}{height}
+\item 
+char $\ast$ \hyperlink{structpng__t_a392d7ef877b6258e64850ce3a2647dae}{out}
+\item 
+size\+\_\+t \hyperlink{structpng__t_ac8ef22a87f97ef02768e0faedea1307d}{out\+\_\+pos}
+\item 
+size\+\_\+t \hyperlink{structpng__t_ac8fcf2b31db62e2bfeb7c2ee10b39908}{out\+\_\+capacity}
+\item 
+uint32\+\_\+t \hyperlink{structpng__t_a85b7a7f21b6108b69872839e2509cd67}{crc}
+\item 
+uint16\+\_\+t \hyperlink{structpng__t_a90256a2c1ea2d035ef0a2b87e543bcb8}{s1}
+\item 
+uint16\+\_\+t \hyperlink{structpng__t_a95ac0a163ca4077eac153ae972bfae9f}{s2}
+\item 
+size\+\_\+t \hyperlink{structpng__t_a1b190a6d9d3ec163d1a9547740e5d6eb}{bpp}
+\item 
+size\+\_\+t \hyperlink{structpng__t_aac2e70794d77a569d02e9db38669f145}{stream\+\_\+x}
+\item 
+size\+\_\+t \hyperlink{structpng__t_a7b8b9225ada455d197dee07a4a25b910}{stream\+\_\+y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a type representing a png image 
+
+a type representing a png image 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structpng__t_a1b190a6d9d3ec163d1a9547740e5d6eb}\label{structpng__t_a1b190a6d9d3ec163d1a9547740e5d6eb}} 
+\index{png\+\_\+t@{png\+\_\+t}!bpp@{bpp}}
+\index{bpp@{bpp}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{bpp}{bpp}}
+{\footnotesize\ttfamily size\+\_\+t bpp}
+
+Bytes per pixel \mbox{\Hypertarget{structpng__t_ad721fc6ca6a3d6ba3bc506576622aab0}\label{structpng__t_ad721fc6ca6a3d6ba3bc506576622aab0}} 
+\index{png\+\_\+t@{png\+\_\+t}!capacity@{capacity}}
+\index{capacity@{capacity}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily size\+\_\+t capacity}
+
+Reserved memory for raw data \mbox{\Hypertarget{structpng__t_a85b7a7f21b6108b69872839e2509cd67}\label{structpng__t_a85b7a7f21b6108b69872839e2509cd67}} 
+\index{png\+\_\+t@{png\+\_\+t}!crc@{crc}}
+\index{crc@{crc}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{crc}{crc}}
+{\footnotesize\ttfamily uint32\+\_\+t crc}
+
+Current C\+R\+C32 checksum \mbox{\Hypertarget{structpng__t_a91a70b77df95bd8b0830b49a094c2acb}\label{structpng__t_a91a70b77df95bd8b0830b49a094c2acb}} 
+\index{png\+\_\+t@{png\+\_\+t}!data@{data}}
+\index{data@{data}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily char$\ast$ data}
+
+Raw pixel data, format depends on type \mbox{\Hypertarget{structpng__t_a02afeaaf8574e7a78d6b466ff2695052}\label{structpng__t_a02afeaaf8574e7a78d6b466ff2695052}} 
+\index{png\+\_\+t@{png\+\_\+t}!height@{height}}
+\index{height@{height}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily size\+\_\+t height}
+
+\hyperlink{struct_image}{Image} height \mbox{\Hypertarget{structpng__t_a392d7ef877b6258e64850ce3a2647dae}\label{structpng__t_a392d7ef877b6258e64850ce3a2647dae}} 
+\index{png\+\_\+t@{png\+\_\+t}!out@{out}}
+\index{out@{out}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{out}{out}}
+{\footnotesize\ttfamily char$\ast$ out}
+
+Buffer to store final P\+NG \mbox{\Hypertarget{structpng__t_ac8fcf2b31db62e2bfeb7c2ee10b39908}\label{structpng__t_ac8fcf2b31db62e2bfeb7c2ee10b39908}} 
+\index{png\+\_\+t@{png\+\_\+t}!out\+\_\+capacity@{out\+\_\+capacity}}
+\index{out\+\_\+capacity@{out\+\_\+capacity}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{out\+\_\+capacity}{out\_capacity}}
+{\footnotesize\ttfamily size\+\_\+t out\+\_\+capacity}
+
+Capacity of output buffer \mbox{\Hypertarget{structpng__t_ac8ef22a87f97ef02768e0faedea1307d}\label{structpng__t_ac8ef22a87f97ef02768e0faedea1307d}} 
+\index{png\+\_\+t@{png\+\_\+t}!out\+\_\+pos@{out\+\_\+pos}}
+\index{out\+\_\+pos@{out\+\_\+pos}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{out\+\_\+pos}{out\_pos}}
+{\footnotesize\ttfamily size\+\_\+t out\+\_\+pos}
+
+Current size of output buffer \mbox{\Hypertarget{structpng__t_a90256a2c1ea2d035ef0a2b87e543bcb8}\label{structpng__t_a90256a2c1ea2d035ef0a2b87e543bcb8}} 
+\index{png\+\_\+t@{png\+\_\+t}!s1@{s1}}
+\index{s1@{s1}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{s1}{s1}}
+{\footnotesize\ttfamily uint16\+\_\+t s1}
+
+Helper variables for Adler checksum \mbox{\Hypertarget{structpng__t_a95ac0a163ca4077eac153ae972bfae9f}\label{structpng__t_a95ac0a163ca4077eac153ae972bfae9f}} 
+\index{png\+\_\+t@{png\+\_\+t}!s2@{s2}}
+\index{s2@{s2}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{s2}{s2}}
+{\footnotesize\ttfamily uint16\+\_\+t s2}
+
+Helper variables for Adler checksum \mbox{\Hypertarget{structpng__t_aac2e70794d77a569d02e9db38669f145}\label{structpng__t_aac2e70794d77a569d02e9db38669f145}} 
+\index{png\+\_\+t@{png\+\_\+t}!stream\+\_\+x@{stream\+\_\+x}}
+\index{stream\+\_\+x@{stream\+\_\+x}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{stream\+\_\+x}{stream\_x}}
+{\footnotesize\ttfamily size\+\_\+t stream\+\_\+x}
+
+Current x coordinate for pixel streaming \mbox{\Hypertarget{structpng__t_a7b8b9225ada455d197dee07a4a25b910}\label{structpng__t_a7b8b9225ada455d197dee07a4a25b910}} 
+\index{png\+\_\+t@{png\+\_\+t}!stream\+\_\+y@{stream\+\_\+y}}
+\index{stream\+\_\+y@{stream\+\_\+y}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{stream\+\_\+y}{stream\_y}}
+{\footnotesize\ttfamily size\+\_\+t stream\+\_\+y}
+
+Current y coordinate for pixel streaming \mbox{\Hypertarget{structpng__t_a02bed8590a9ddf520e58a060059518ec}\label{structpng__t_a02bed8590a9ddf520e58a060059518ec}} 
+\index{png\+\_\+t@{png\+\_\+t}!width@{width}}
+\index{width@{width}!png\+\_\+t@{png\+\_\+t}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily size\+\_\+t width}
+
+\hyperlink{struct_image}{Image} width 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_png___output_8c}{Png\+\_\+\+Output.\+c}\end{DoxyCompactItemize}
