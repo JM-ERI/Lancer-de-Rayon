@@ -1,0 +1,18 @@
+var searchData=
+[
+  ['parse_5fargs',['parse_args',['../_parser_8h.html#a011af2f67fb95e38b5839fe1fa6c452e',1,'parse_args(int argc, char *argv[], Option *options):&#160;Parser.c'],['../_parser_8c.html#a011af2f67fb95e38b5839fe1fa6c452e',1,'parse_args(int argc, char *argv[], Option *options):&#160;Parser.c']]],
+  ['parse_5fxml_5fscene',['parse_XML_scene',['../_parser_8h.html#a7d3e8a4a1e3ca923e8adb94a6a5c662d',1,'parse_XML_scene(const char *input_path, Scene *scene):&#160;Parser.c'],['../_parser_8c.html#a7d3e8a4a1e3ca923e8adb94a6a5c662d',1,'parse_XML_scene(const char *input_path, Scene *scene):&#160;Parser.c']]],
+  ['png_5fdestroy',['png_destroy',['../_png___output_8c.html#a19d40533ea99a25ee5d32ad6475b7ffd',1,'Png_Output.c']]],
+  ['png_5fget_5fdata',['png_get_data',['../_png___output_8c.html#ac35348641a8f05cc24512c2359aab2d1',1,'Png_Output.c']]],
+  ['png_5fnew',['png_new',['../_png___output_8c.html#a65275848eac99ed66b22a0df1035a13b',1,'Png_Output.c']]],
+  ['png_5foutput_5ffile',['PNG_output_file',['../_png___output_8h.html#ae9d911a4eee3b5d2ff5650baf555ca9f',1,'PNG_output_file(const Image *I, const char *output_path):&#160;Png_Output.c'],['../_png___output_8c.html#ae9d911a4eee3b5d2ff5650baf555ca9f',1,'PNG_output_file(const Image *I, const char *output_path):&#160;Png_Output.c']]],
+  ['png_5fsave',['png_save',['../_png___output_8c.html#aeeee126ffb92555e4ae3b0abaf4bb2c8',1,'Png_Output.c']]],
+  ['png_5fset_5fpixel',['png_set_pixel',['../_png___output_8c.html#af79cea50380811f935e5d46128c66b70',1,'Png_Output.c']]],
+  ['pointbarycentre',['PointBarycentre',['../_point_8h.html#ac811169e97b55bc567f51e34d8c85e4f',1,'PointBarycentre(const Point *A, const Point *B, const Point *C, Point *BaryCentre):&#160;Point.c'],['../_point_8c.html#ac811169e97b55bc567f51e34d8c85e4f',1,'PointBarycentre(const Point *A, const Point *B, const Point *C, Point *BaryCentre):&#160;Point.c']]],
+  ['pointcenter',['PointCenter',['../_point_8h.html#a8912155316eb1b59ccbc9af652fa85f5',1,'PointCenter(Point *res, const Point *A, const Point *B):&#160;Point.c'],['../_point_8c.html#a8912155316eb1b59ccbc9af652fa85f5',1,'PointCenter(Point *res, const Point *A, const Point *B):&#160;Point.c']]],
+  ['pointconsoledisplay',['PointConsoleDisplay',['../_point_8h.html#a9aa4b8ef9609540b0a58f4b841b2da12',1,'PointConsoleDisplay(const Point *p, int return_line):&#160;Point.c'],['../_point_8c.html#a9aa4b8ef9609540b0a58f4b841b2da12',1,'PointConsoleDisplay(const Point *p, int return_line):&#160;Point.c']]],
+  ['pointcopy',['PointCopy',['../_point_8h.html#a23ba93e3ff33fc963b04a7a6b7d2a02e',1,'PointCopy(Point *dest, const Point *src):&#160;Point.c'],['../_point_8c.html#a23ba93e3ff33fc963b04a7a6b7d2a02e',1,'PointCopy(Point *dest, const Point *src):&#160;Point.c']]],
+  ['pointdistance',['PointDistance',['../_point_8h.html#ae023f752cbf662f10bb4b9086e871aa3',1,'PointDistance(const Point *A, const Point *B, double *res):&#160;Point.c'],['../_point_8c.html#ae023f752cbf662f10bb4b9086e871aa3',1,'PointDistance(const Point *A, const Point *B, double *res):&#160;Point.c']]],
+  ['pointnormel2',['PointNormeL2',['../_point_8h.html#ab6956f8b3de44009fe28b420c4df3dbe',1,'PointNormeL2(const Point *A, const Point *B, double *res):&#160;Point.c'],['../_point_8c.html#ab6956f8b3de44009fe28b420c4df3dbe',1,'PointNormeL2(const Point *A, const Point *B, double *res):&#160;Point.c']]],
+  ['progressiveray',['progressiveRay',['../_image_8h.html#a12fca6dfb14c74382e06366ad01a47e7',1,'progressiveRay(int render, Image *dest, Image *comming, Image *old):&#160;Image.c'],['../_image_8c.html#a12fca6dfb14c74382e06366ad01a47e7',1,'progressiveRay(int render, Image *dest, Image *comming, Image *old):&#160;Image.c']]]
+];
